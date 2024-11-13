@@ -1,0 +1,145 @@
+:root{
+    --oscuro:           #070908;
+    --contraste:        #6A8E7F;
+    --verdeFuerte:      #053B06;
+    --verdeContraste:   #386543;
+    --verdeClaro:       #8AA288;
+    --claroVerde:       #DCDECD;
+    --claro:            #F3EFE0;
+}
+
+.header{
+    background-color: var( --verdeFuerte );
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+    padding: 0.3rem 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 4.3rem;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 1.25rem;    
+}
+
+.header .nav-links li:hover, .overlay a:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: var( --claro); 
+}
+
+.header .nav-links a:hover{
+    color: var( --verdeClaro);
+}
+
+.menu {
+    display:none;
+}
+
+.header .btn button, .header .menu button{
+    margin-left: 1.25rem;
+    font-weight: 700;
+    color: var( --oscuro );
+    padding: 0.5rem 1.5rem;
+    background: var( --claro);
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover, .header .menu button:hover{
+    background-color: var( --claroVerde);
+    color: var( --verdeClaro);
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 50rem){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+/* -------------------- Nav Mobile ----------------------- */
+
+.header a{
+    text-decoration: none;
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var( --oscuro );
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 0.9rem;
+    font-size: 2.25rem;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: var( --claro);
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: var( --verdeClaro);
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 1.25rem;
+    right: 2.8rem;
+    font-size: 4rem;
+}
+
+@media screen and (max-height:28.125rem) {
+    .header .overlay a{
+        font-size: 1.25rem;
+    }
+    .header .overlay .close{
+        font-size: 2.5rem;
+        top: 0.9rem;
+        right: 2.1rem;
+    }
+}
