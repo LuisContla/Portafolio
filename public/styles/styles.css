@@ -1,20 +1,201 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
-:root{
-    --oscuro:           #070908;
-    --contraste:        #6A8E7F;
-    --verdeFuerte:      #053B06;
-    --verdeContraste:   #386543;
-    --verdeClaro:       #8AA288;
-    --claroVerde:       #DCDECD;
-    --claro:            #F3EFE0;
+:root {
+    --oscuro: #070908;
+    --contraste: #6A8E7F;
+    --verdeFuerte: #053B06;
+    --verdeContraste: #386543;
+    --verdeClaro: #8AA288;
+    --claroVerde: #DCDECD;
+    --claro: #F3EFE0;
 }
 
-*{
+* {
     margin: 0rem;
     font-family: 'Nunito', sans-serif;
 }
 
-body{
+body {
     background-color: var(--verdeClaro);
+}
+
+/*.contenedor-principal{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}*/
+
+.seccion {
+     /*border: solid var(--verdeFuerte) 3px;*/
+    padding: 2rem 12rem 2rem 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-titulo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* -------------------- NOMBRE ----------------------- */
+
+.nombre {
+    /*border: solid var(--verdeFuerte) 3px;*/
+    padding: 2rem 12rem 2rem 12rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.nombre-titulo {
+    /*border: solid var(--verdeFuerte) 3px;*/
+    font-size: 3rem;
+    flex-direction: column;
+}
+
+.nombre-nombre {
+    /*border: solid var(--verdeFuerte) 3px;*/
+    font-weight: bold;
+}
+
+.nombre-imagen {
+    /*border: solid var(--verdeFuerte) 3px;*/
+    width: 50%;
+}
+
+.nombre-imagen-imagen {
+    width: 100%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.nombre-texto {
+    /*border: solid var(--verdeFuerte) 3px;*/
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+/* -------------------- ABOUT ----------------------- */
+
+.about-texto {
+    font-size: 1.25rem;
+}
+
+/* -------------------- EDUCACION ----------------------- */
+
+.educacion{
+    /*border: solid var(--verdeFuerte) 3px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}.educacion-elemento {
+    /*border: solid var(--verdeFuerte) 3px;*/
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0.25rem 0rem 0.25rem 0rem;
+    height: 20%;
+    width: 60%;
+}.educacion-elemento-imagen {
+    width: 15%;
+}.educacion-elemento-imagen-imagen {
+    width: 100%;
+    clip-path: circle(50% at 50% 50%);
+}.educacion-elemento-texto {
+    padding: 0.5rem;
+    width: 100%;
+}.educacion-elemento-texto-titulo {
+    font-weight: bold;
+}.educacion-elemento-fecha {
+    width: 30%;
+}
+
+/* -------------------- HABILIDADES ----------------------- */
+
+.habilidades{
+    /*border: solid var(--verdeFuerte) 3px;*/
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}.habilidades-elementos{
+    /*border: solid var(--verdeFuerte) 3px;*/
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 70%;
+}.habilidades-elementos-elemento{
+    font-size: 1rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin: 0.5rem 0.25rem 0.25rem 0.25rem;
+    background-color: var(--verdeContraste);
+    color: var(--claroVerde);
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
+/* -------------------- PROYECTOS ----------------------- */
+
+.proyectos {
+     /*border: solid var(--verdeFuerte) 3px;*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.proyectos-elemento {
+     /*border: solid var(--verdeFuerte) 3px;*/
+    background-color: var(--verdeClaro);
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    flex: 1 1 calc(30% + 20px); /* Ocupa un tercio del ancho menos el espacio del gap */
+    margin: 0.5rem;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.protectos-elemento-showcase-imagen {
+    width: 100%;
+}
+
+.proyectos-elemento-detalles {
+    padding: 0.5rem;
+}
+
+.proyectos-elemento-nombre {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.proyectos-elemento-tecnologias {
+    display: flex;
+}
+
+.proyectos-elemento-tecnologias-boton {
+    font-size: 0.80rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin: 0.5rem 0.25rem 0.25rem 0.25rem;
+    background-color: var(--verdeContraste);
+    color: var(--claroVerde);
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
+.proyectos-elemento-links {
+    display: flex;
+}
+
+.proyectos-elemento-links-boton {
+    font-size: 0.80rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin: 0.5rem 0.25rem 0.25rem 0.25rem;
+    background-color: var(--verdeFuerte);
+    color: var(--claroVerde);
+    font-weight: bold;
+    border-radius: 0.5rem;
 }

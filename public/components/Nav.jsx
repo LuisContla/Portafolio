@@ -1,4 +1,5 @@
 import '../styles/nav.css'
+import pfp from "../images/FotoPerfil.jpg";
 
 function openNav() {
     document.getElementById("mobile-menu").style.width = "100%";
@@ -14,7 +15,7 @@ function Nav() {
         <>
             <header className="header">
                 <div className="logo">
-                    <img src="img/Mountain.png" alt="Logo de la marca" />
+                    <img src={pfp} alt="Luis Andrés COntla MOta" />
                 </div>
                 <nav>
                     <ul className="nav-links">

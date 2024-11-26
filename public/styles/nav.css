@@ -26,6 +26,7 @@
     height: 4.3rem;
     width: auto;
     transition: all 0.3s;
+    clip-path: circle(50% at 50% 50%);
 }
 
 .header .logo img:hover{
