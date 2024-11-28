@@ -32,9 +32,7 @@ body {
     padding: 2rem 12rem 2rem 12rem;
     display: flex;
     flex-direction: column;
-}
-
-.seccion-titulo {
+}.seccion-titulo {
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -48,32 +46,22 @@ body {
     flex-direction: row;
     align-items: center;
     justify-items: center;
-}
-
-.nombre-titulo {
+}.nombre-titulo {
     /*border: solid var(--verdeFuerte) 3px;*/
     font-size: 3rem;
     flex-direction: column;
-}
-
-.nombre-nombre {
+}.nombre-nombre {
     /*border: solid var(--verdeFuerte) 3px;*/
     font-weight: bold;
-}
-
-.nombre-imagen {
+}.nombre-imagen {
     /*border: solid var(--verdeFuerte) 3px;*/
-    width: 50%;
-}
-
-.nombre-imagen-imagen {
+    width: 15rem;
+}.nombre-imagen-imagen {
     width: 100%;
     clip-path: circle(50% at 50% 50%);
-}
-
-.nombre-texto {
+}.nombre-texto {
     /*border: solid var(--verdeFuerte) 3px;*/
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-right: 1rem;
 }
 
@@ -98,7 +86,11 @@ body {
     justify-items: center;
     margin: 0.25rem 0rem 0.25rem 0rem;
     height: 20%;
-    width: 60%;
+    width: 80%;
+}.educacion-elemento:hover{
+    scale: 1.05;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }.educacion-elemento-imagen {
     width: 15%;
 }.educacion-elemento-imagen-imagen {
@@ -116,7 +108,7 @@ body {
 /* -------------------- HABILIDADES ----------------------- */
 
 .habilidades{
-    /*border: solid var(--verdeFuerte) 3px;*/
+    /*border: solid var(--verdeFuerte) 3px;*/   
     display: flex;
     align-items: center;
     justify-items: center;
@@ -136,6 +128,8 @@ body {
     color: var(--claroVerde);
     font-weight: bold;
     border-radius: 0.5rem;
+}.habilidades-elementos-elemento:hover{
+    scale: 1.05;
 }
 
 /* -------------------- PROYECTOS ----------------------- */
@@ -145,9 +139,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-.proyectos-elemento {
+}.proyectos-elemento{
      /*border: solid var(--verdeFuerte) 3px;*/
     background-color: var(--verdeClaro);
     display: flex;
@@ -157,26 +149,19 @@ body {
     margin: 0.5rem;
     width: 30%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}.proyectos-elemento:hover{
+    scale: 1.05;
 }
-
 .protectos-elemento-showcase-imagen {
     width: 100%;
-}
-
-.proyectos-elemento-detalles {
+}.proyectos-elemento-detalles {
     padding: 0.5rem;
-}
-
-.proyectos-elemento-nombre {
+}.proyectos-elemento-nombre {
     font-weight: bold;
     font-size: 1.25rem;
-}
-
-.proyectos-elemento-tecnologias {
+}.proyectos-elemento-tecnologias {
     display: flex;
-}
-
-.proyectos-elemento-tecnologias-boton {
+}.proyectos-elemento-tecnologias-boton {
     font-size: 0.80rem;
     padding: 0.25rem 1rem 0.25rem 1rem;
     margin: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -184,13 +169,9 @@ body {
     color: var(--claroVerde);
     font-weight: bold;
     border-radius: 0.5rem;
-}
-
-.proyectos-elemento-links {
+}.proyectos-elemento-links {
     display: flex;
-}
-
-.proyectos-elemento-links-boton {
+}.proyectos-elemento-links-boton {
     font-size: 0.80rem;
     padding: 0.25rem 1rem 0.25rem 1rem;
     margin: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -198,4 +179,56 @@ body {
     color: var(--claroVerde);
     font-weight: bold;
     border-radius: 0.5rem;
+}
+
+/* -------------------- PROYECTOS ----------------------- */
+
+.contacto{ 
+    /*border: solid var(--verdeFuerte) 3px;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}.contacto-formulario{
+    /*border: solid var(--verdeFuerte) 3px;*/
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}.contacto-formulario-titulo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}.contacto-formulario-elemento{
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}.contacto-formulario-etiqueta{
+    font-weight: bold;
+}.contacto-formulario-campo-texto{
+    height: 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+}.contacto-formulario-campo-textarea{
+    height: 6rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+}.contacto-formulario-boton{
+    font-size: 1rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    margin: 0.5rem 0.25rem 0.25rem 0.25rem;
+    background-color: var(--verdeContraste);
+    color: var(--claroVerde);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: fit-content;
+}.contacto-formulario-boton:hover{
+    scale: 1.025;
+}
+
+/* -------------------- FOOTER ----------------------- */
+
+.footer{
+    background-color: var(--verdeFuerte);
+    height: 8rem;
 }

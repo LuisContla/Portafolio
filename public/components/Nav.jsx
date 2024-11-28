@@ -26,7 +26,7 @@ function Nav() {
                             <a href="#">Proyectos</a>
                         </li>
                         <li>
-                            <a href="#">Servicios</a>
+                            <a href="#">Redes</a>
                         </li>
                     </ul>
                 </nav>

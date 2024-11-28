@@ -3,6 +3,9 @@ import ProyectCard from "../components/ProyectCard";
 import Habilidad from "../components/Habiilidad";
 
 import pfp from "../images/FotoPerfil.jpg";
+import ECA from "../images/ECA.jpeg";
+import CECYT9 from "../images/CECyT9.png";
+import ESCOM from "../images/ESCOM.jpg";
 import placeImg from "../images/FotoProyecto.jpg";
 
 function Home() {
@@ -13,7 +16,7 @@ function Home() {
                 <div className="nombre">
                     <div className="nombre-titulo">
                         <div className="nombre-nombre">Hola, soy Luis Contla 👋</div>
-                        <div className="nombre-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, autem dignissimos iusto est maxime nihil architecto. Libero maiores amet quidem neque. Debitis consectetur quia, officia maiores qui sed. Dolorum, corrupti?</div>
+                        <div className="nombre-texto">Ingeniero en Sistemas Computacionales enfocado en el Desarrollo Web.</div>
                     </div>
                     <div className="nombre-imagen">
                         <img className="nombre-imagen-imagen" src={pfp} alt="Luis Andrés Contla Mota" />
@@ -21,24 +24,26 @@ function Home() {
                 </div>
                 <div className="seccion">
                     <div className="seccion-titulo">Acerca de mi</div>
-                    <div className="about-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est ullam totam laboriosam quos obcaecati eos quis perspiciatis, veritatis maiores voluptatem. Harum debitis autem enim velit accusamus quos nisi suscipit?</div>
+                    <div className="about-texto">Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Confío plenamente en mi capacidad de producir ideas interesantes para el desarrollo de nuevos softwares útiles. Mi objetivo es aportar mi experiencia y conocimiento en programación y tecnología a empresas e instituciones</div>
                 </div>
                 <div className="seccion">
                     <div className="seccion-titulo">Educación</div>
                     <div className="educacion">
-                        <EducacionElemento img={pfp} titulo="Centro Educativo ECA" texto="Educación Básica" fecha="2009-2018" />
-                        <EducacionElemento img={pfp} titulo="CECyT 9 Juan de Dios Bátiz" texto="Técnico en Programación" fecha="2018-2021" />
-                        <EducacionElemento img={pfp} titulo="Escuela Superior de Cómputo" texto="Ingeniero en Sistemas Comuptacionales" fecha="2021-Actualidad" />
+                        <EducacionElemento img={ECA} titulo="Centro Educativo ECA" texto="Educación Básica" fecha="2009-2018" />
+                        <EducacionElemento img={CECYT9} titulo="CECyT 9 Juan de Dios Bátiz" texto="Técnico en Programación" fecha="2018-2021" />
+                        <EducacionElemento img={ESCOM} titulo="Escuela Superior de Cómputo" texto="Ingeniero en Sistemas Comuptacionales" fecha="2021-Actualidad" />
                     </div>
                 </div>
                 <div className="seccion">
                     <div className="seccion-titulo">Habilidades</div>
                     <div className="habilidades">
                         <div className="habilidades-elementos">
-                            <Habilidad txt="React"/>
-                            <Habilidad txt="HTML"/>
-                            <Habilidad txt="CSS"/>
-                            <Habilidad txt="JavaScript"/>
+                            <Habilidad txt="React" />
+                            <Habilidad txt="HTML" />
+                            <Habilidad txt="CSS" />
+                            <Habilidad txt="JavaScript" />
+                            <Habilidad txt="SQL" />
+                            <Habilidad txt="MongoDB" />
                         </div>
                     </div>
                 </div>
@@ -51,10 +56,52 @@ function Home() {
                     </div>
                 </div>
                 <div className="seccion">
-                    <div className="seccion-titulo">Servicios</div>
+                    <div className="seccion-titulo">Redes Sociales</div>
                 </div>
                 <div className="seccion">
                     <div className="seccion-titulo">Contacto</div>
+                    <div className="contacto">
+                        <div className="contacto-formulario">
+                            <div className="contacto-formulario-titulo">
+                                Envía un mensaje
+                            </div>
+                            <div className="contacto-formulario-elemento">
+                                <div className="contacto-formulario-etiqueta">
+                                    Nombre
+                                </div>
+                                <div className="contacto-formulario-campo">
+                                    <input type="text" className="contacto-formulario-campo-texto" />
+                                </div>
+                            </div>
+                            <div className="contacto-formulario-elemento">
+                                <div className="contacto-formulario-etiqueta">
+                                    Correo
+                                </div>
+                                <div className="contacto-formulario-campo">
+                                    <input type="text" className="contacto-formulario-campo-texto" />
+                                </div>
+                            </div>
+                            <div className="contacto-formulario-elemento">
+                                <div className="contacto-formulario-etiqueta">
+                                    Asunto
+                                </div>
+                                <div className="contacto-formulario-campo">
+                                    <input type="text" className="contacto-formulario-campo-texto" />
+                                </div>
+                            </div>
+                            <div className="contacto-formulario-elemento">
+                                <div className="contacto-formulario-etiqueta">
+                                    Mensaje
+                                </div>
+                                <div className="contacto-formulario-campo">
+                                    <input type="textarea" className="contacto-formulario-campo-textarea" />
+                                </div>
+                            </div>
+                            <div className="contacto-formulario-boton">
+                                Enviar
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
