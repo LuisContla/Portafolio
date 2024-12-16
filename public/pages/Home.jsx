@@ -38,12 +38,12 @@ function Home() {
                     <div className="seccion-titulo">Habilidades</div>
                     <div className="habilidades">
                         <div className="habilidades-elementos">
-                            <Habilidad txt="React" />
-                            <Habilidad txt="HTML" />
-                            <Habilidad txt="CSS" />
-                            <Habilidad txt="JavaScript" />
-                            <Habilidad txt="SQL" />
-                            <Habilidad txt="MongoDB" />
+                            <Habilidad txt="React" icono="React" />
+                            <Habilidad txt="HTML" icono="HTML" />
+                            <Habilidad txt="CSS" icono="CSS" />
+                            <Habilidad txt="JavaScript" icono="JavaScript" />
+                            <Habilidad txt="SQL" icono="SQL" />
+                            <Habilidad txt="MongoDB" icono="MongoDB" />
                         </div>
                     </div>
                 </div>

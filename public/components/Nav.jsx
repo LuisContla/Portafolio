@@ -1,5 +1,5 @@
 import '../styles/nav.css'
-import pfp from "../images/FotoPerfil.jpg";
+import pfp from "../images/Portafolio Logo.png";
 
 function openNav() {
     document.getElementById("mobile-menu").style.width = "100%";
