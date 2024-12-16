@@ -20,17 +20,17 @@ function Nav() {
                 <nav>
                     <ul className="nav-links">
                         <li>
-                            <a href="#">Acerca de</a>
+                            <a href="#About">Acerca de</a>
                         </li>
                         <li>
-                            <a href="#">Proyectos</a>
+                            <a href="#Proyectos">Proyectos</a>
                         </li>
                         <li>
-                            <a href="#">Redes</a>
+                            <a href="#Redes">Redes</a>
                         </li>
                     </ul>
                 </nav>
-                <a className="btn" href="#">
+                <a className="btn" href="#Contacto">
                     <button>Contacto</button>
                 </a>
                 <a onclick="openNav()" className="menu" href="#">
@@ -41,10 +41,10 @@ function Nav() {
                         ×
                     </a>
                     <div className="overlay-content">
-                        <a href="#">Acerca de</a>
-                        <a href="#">Proyectos</a>
-                        <a href="#">Servicios</a>
-                        <a href="#">Contacto</a>
+                        <a href="#About">Acerca de</a>
+                        <a href="#Proyectos">Proyectos</a>
+                        <a href="#Redes">Redes Sociales</a>
+                        <a href="#Contacto">Contacto</a>
                     </div>
                 </div>
             </header>

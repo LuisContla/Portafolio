@@ -87,6 +87,8 @@ body {
     margin: 0.25rem 0rem 0.25rem 0rem;
     height: 20%;
     width: 80%;
+    text-decoration: none;
+    color: var(--oscuro);
 }.educacion-elemento:hover{
     scale: 1.05;
     border-radius: 1rem;
@@ -187,6 +189,9 @@ body {
     color: var(--claroVerde);
     font-weight: bold;
     border-radius: 0.5rem;
+    text-decoration: none;
+}.proyectos-elemento-links-boton:hover {
+    scale: 1.05;
 }
 
 /* -------------------- CONTACTO ----------------------- */

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const Habilidad = (props) => {
 
-    const { txt, icono } = props;
+    const { txt, icono, link } = props;
     const src = "../images/" + icono + ".png";
 
     return (

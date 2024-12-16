@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const ProyectCard = (props) => {
 
-    const { img, titulo, texto, fecha } = props;
+    const { img, titulo, texto, fecha, git, web } = props;
 
     return (
         <>
@@ -18,8 +20,8 @@ const ProyectCard = (props) => {
                         <div className="proyectos-elemento-tecnologias-boton">JavaScript</div>
                     </div>
                     <div className="proyectos-elemento-links">
-                        <div className="proyectos-elemento-links-boton">GitHub</div>
-                        <div className="proyectos-elemento-links-boton">Source</div>
+                        <Link className="proyectos-elemento-links-boton" to={git} target="_blank" rel="noopener noreferrer">GitHub</Link>
+                        <Link className="proyectos-elemento-links-boton" to={web} target="_blank" rel="noopener noreferrer">Demo</Link>
                     </div>
                 </div>
             </div>
