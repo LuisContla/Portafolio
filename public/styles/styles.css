@@ -134,31 +134,28 @@ body {
     color: var(--claroVerde);
     font-weight: bold;
     border-radius: 0.5rem;
-    height: 10rem;
-    width: 10rem;
 }.habilidades-elementos-elemento:hover{
     scale: 1.05;
 }.habilidades-elementos-elemento-icono{
-    width: 80%;
+    height: 5rem;
 }
 
 /* -------------------- PROYECTOS ----------------------- */
 
 .proyectos {
-     /*border: solid var(--verdeFuerte) 3px;*/
+    /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: center; /* centra las filas */
+    gap: 1rem; /* espacio entre ítems */
 }.proyectos-elemento{
-     /*border: solid var(--verdeFuerte) 3px;*/
+    /*border: solid var(--verdeFuerte) 3px;*/
     background-color: var(--verdeClaro);
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
-    flex: 1 1 calc(30% + 20px); /* Ocupa un tercio del ancho menos el espacio del gap */
-    margin: 0.5rem;
-    width: 30%;
+    flex: 1 1 calc(33.333% - 1rem); /* hasta 3 columnas */
+    max-width: calc(33.333% - 1rem);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0; /* el gap ya maneja el espaciado */
+    min-width: 200px; /* opcional: evita que los elementos se hagan muy pequeños */
 }.proyectos-elemento:hover{
     scale: 1.05;
 }
@@ -192,6 +189,33 @@ body {
     text-decoration: none;
 }.proyectos-elemento-links-boton:hover {
     scale: 1.05;
+}
+
+/* -------------------- REDES SOCIALES ----------------------- */
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centra las filas */
+    align-items: center;
+    justify-items: center;
+    gap: 1rem; /* espacio entre ítems */
+}
+
+.redes-elemento{
+    /*border: solid var(--verdeFuerte) 3px;*/
+    background-color: var(--verdeContraste);
+    border-radius: 0.5rem;
+    flex: 1 1 calc(10% - 1rem); /* hasta 10 columnas */
+    max-width: calc(10% - 1rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0; /* el gap ya maneja el espaciado */
+    min-width: 200px; /* opcional: evita que los elementos se hagan muy pequeños */
+    text-align: center;
+}
+
+.redes-elemento-icono{
+    width: 50%;
 }
 
 /* -------------------- CONTACTO ----------------------- */
@@ -245,3 +269,20 @@ body {
     background-color: var(--verdeFuerte);
     height: 8rem;
 }
+
+/* -------------------- RESPONSIVIDAD ----------------------- */
+
+@media (max-width: 900px) {
+    .grid-item {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
