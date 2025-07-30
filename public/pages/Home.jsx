@@ -1,9 +1,7 @@
 import EducacionElemento from "../components/EducacionElemento";
 import ProyectCard from "../components/ProyectCard";
 import Habilidad from "../components/Habiilidad";
-import RedSocial from "../components/RedSocial";
 
-import pfp from "../images/FotoPerfil.jpg";
 import ECA from "../images/ECA.jpeg";
 import CECYT9 from "../images/CECyT9.png";
 import ESCOM from "../images/ESCOM.jpg";
@@ -13,21 +11,17 @@ import Encriptador from "../images/Encriptador.png";
 import DaysOfCode from "../images/7DaysOfCode.png";
 import AluraFlix from "../images/AluraFlix.png";
 
+import Greeting from "../components/Greeting";
+import WhatIDo from "../components/WhatIDo";
+
 function Home() {
 
     return (
         <>
             <div className="contenedor-principal">
-                <div className="nombre">
-                    <div className="nombre-titulo">
-                        <div className="nombre-nombre">Hola, soy Luis Contla 👋</div>
-                        <div className="nombre-texto">Ingeniero en Sistemas Computacionales enfocado en el Desarrollo Web.</div>
-                    </div>
-                    <div className="nombre-imagen">
-                        <img className="nombre-imagen-imagen" src={pfp} alt="Luis Andrés Contla Mota" />
-                    </div>
-                </div>
-                <div className="seccion" id="About">
+                <Greeting />
+                <WhatIDo />
+                {/* <div className="seccion" id="About">
                     <div className="seccion-titulo">Acerca de mi</div>
                     <div className="about-texto">Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Confío plenamente en mi capacidad de producir ideas interesantes para el desarrollo de nuevos softwares útiles. Mi objetivo es aportar mi experiencia y conocimiento en programación y tecnología a empresas e instituciones</div>
                 </div>
@@ -64,13 +58,6 @@ function Home() {
                         <ProyectCard img={placeImg} titulo="Juego de la Vida de Conway" texto="Proyecto Académico acerca de una simulación del Juego de la Vida de Conway" fecha="2025" />
                         <ProyectCard img={placeImg} titulo="Simulación de Regla 30 de Wolfram" texto="Proyecto Académico acerca de una simulación de la Regla 30 de Automatas Celulares de Wolfram" fecha="2025" />
                         <ProyectCard img={placeImg} titulo="Regla 184 Gráfica de Wolfram" texto="Proyecto Académico acerca de una simulación gráfica de la Regla 184 de Automatas Celulares de Wolfram" fecha="2025" />
-                    </div>
-                </div>
-                <div className="seccion" id="Redes">
-                    <div className="seccion-titulo">Redes Sociales</div>
-                    <div className="redes">
-                        <RedSocial red="LinkedIn" />
-                        <RedSocial red="GitHub" />
                     </div>
                 </div>
                 <div className="seccion" id="Contacto">
@@ -117,7 +104,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

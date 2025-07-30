@@ -6,7 +6,7 @@
     --verdeFuerte: #053B06;
     --verdeContraste: #386543;
     --verdeClaro: #8AA288;
-    --claroVerde: #DCDECD;
+    --claroVerde: #d1decd;
     --claro: #F3EFE0;
 }
 
@@ -16,53 +16,192 @@
 }
 
 body {
-    background-color: var(--verdeClaro);
+    background-color: var(--claroVerde);
 }
 
-/*.contenedor-principal{
-    width: 70%;
+/* -------------------- NAVEGACIÓN ----------------------- */
+
+nav {
+    background-color: var(--verdeContraste);
     display: flex;
-    flex-direction: column;
+    padding: 1rem 5rem 1rem 5rem;
     align-items: center;
-    justify-items: center;
-}*/
+}
+
+.nav-logo {
+    width: 35%;
+    display: flex;
+}
+
+.nav-buttons {
+    width: 65%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.nav-element {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--claro);
+    text-decoration: none;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    transition: 0.3s;
+}
+
+.nav-element:hover {
+    background-color: #6A8E7F;
+}
+
+/* --------------------  ----------------------- */
 
 .seccion {
-     /*border: solid var(--verdeFuerte) 3px;*/
-    padding: 2rem 12rem 2rem 12rem;
+    /*border: solid var(--verdeFuerte) 3px;*/
+    padding: 4rem;
     display: flex;
     flex-direction: column;
-}.seccion-titulo {
+}
+
+.seccion-titulo {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-/* -------------------- NOMBRE ----------------------- */
+/* -------------------- SALUDO ----------------------- */
 
 .nombre {
     /*border: solid var(--verdeFuerte) 3px;*/
-    padding: 2rem 12rem 2rem 12rem;
+    padding: 4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-items: center;
-}.nombre-titulo {
+}
+
+.nombre-titulo {
     /*border: solid var(--verdeFuerte) 3px;*/
     font-size: 3rem;
     flex-direction: column;
-}.nombre-nombre {
+    width: 65%;
+}
+
+.nombre-nombre {
     /*border: solid var(--verdeFuerte) 3px;*/
     font-weight: bold;
-}.nombre-imagen {
+}
+
+.nombre-imagen {
     /*border: solid var(--verdeFuerte) 3px;*/
-    width: 15rem;
-}.nombre-imagen-imagen {
+    width: 45%;
+}
+
+.nombre-imagen-imagen {
     width: 100%;
-    clip-path: circle(50% at 50% 50%);
-}.nombre-texto {
+    height: auto;
+    /* clip-path: circle(50% at 50% 50%); */
+}
+
+.nombre-texto {
     /*border: solid var(--verdeFuerte) 3px;*/
     font-size: 2rem;
     padding-right: 1rem;
+}
+
+/* -------------------- REDES SOCIALES ----------------------- */
+
+.redes {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.redes-elemento {
+    background-color: var(--verdeContraste);
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+    text-align: center;
+    transition: 0.3s;
+}.redes-elemento:hover{
+    background-color: var(--verdeFuerte);
+}
+
+.redes-elemento-icono {
+    margin-top: 0.5rem;
+    width: 55%;
+}
+
+/* -------------------- LO QUE HAGO ----------------------- */
+
+.whatido{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.whatido-titulo{
+    font-size: 3rem;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.whatido-section{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.whatido-section-image{
+    width: 45%;
+}
+
+.whatido-section-text{
+    width: 45%;
+}
+
+.whatido-section-text-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.whatido-section-text-technologies{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.technologie-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatido-section-text-technologies-icon{
+    max-width: 3.5rem;
+    height: 3rem;
+}
+
+.whatido-section-text-summary{
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 1rem;
 }
 
 /* -------------------- ABOUT ----------------------- */
@@ -73,13 +212,15 @@ body {
 
 /* -------------------- EDUCACION ----------------------- */
 
-.educacion{
+.educacion {
     /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-}.educacion-elemento {
+}
+
+.educacion-elemento {
     /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
     align-items: center;
@@ -89,40 +230,56 @@ body {
     width: 80%;
     text-decoration: none;
     color: var(--oscuro);
-}.educacion-elemento:hover{
+}
+
+.educacion-elemento:hover {
     scale: 1.05;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}.educacion-elemento-imagen {
+}
+
+.educacion-elemento-imagen {
     width: 15%;
-}.educacion-elemento-imagen-imagen {
+}
+
+.educacion-elemento-imagen-imagen {
     width: 100%;
     clip-path: circle(50% at 50% 50%);
-}.educacion-elemento-texto {
+}
+
+.educacion-elemento-texto {
     padding: 0.5rem;
     width: 100%;
-}.educacion-elemento-texto-titulo {
+}
+
+.educacion-elemento-texto-titulo {
     font-weight: bold;
-}.educacion-elemento-fecha {
+}
+
+.educacion-elemento-fecha {
     width: 30%;
 }
 
 /* -------------------- HABILIDADES ----------------------- */
 
-.habilidades{
-    /*border: solid var(--verdeFuerte) 3px;*/   
+.habilidades {
+    /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
-}.habilidades-elementos{
+}
+
+.habilidades-elementos {
     /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
     width: 70%;
-}.habilidades-elementos-elemento{
+}
+
+.habilidades-elementos-elemento {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,9 +291,13 @@ body {
     color: var(--claroVerde);
     font-weight: bold;
     border-radius: 0.5rem;
-}.habilidades-elementos-elemento:hover{
+}
+
+.habilidades-elementos-elemento:hover {
     scale: 1.05;
-}.habilidades-elementos-elemento-icono{
+}
+
+.habilidades-elementos-elemento-icono {
     height: 5rem;
 }
 
@@ -146,29 +307,47 @@ body {
     /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* centra las filas */
-    gap: 1rem; /* espacio entre ítems */
-}.proyectos-elemento{
+    justify-content: center;
+    /* centra las filas */
+    gap: 1rem;
+    /* espacio entre ítems */
+}
+
+.proyectos-elemento {
     /*border: solid var(--verdeFuerte) 3px;*/
     background-color: var(--verdeClaro);
-    flex: 1 1 calc(33.333% - 1rem); /* hasta 3 columnas */
+    flex: 1 1 calc(33.333% - 1rem);
+    /* hasta 3 columnas */
     max-width: calc(33.333% - 1rem);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 0; /* el gap ya maneja el espaciado */
-    min-width: 200px; /* opcional: evita que los elementos se hagan muy pequeños */
-}.proyectos-elemento:hover{
+    margin: 0;
+    /* el gap ya maneja el espaciado */
+    min-width: 200px;
+    /* opcional: evita que los elementos se hagan muy pequeños */
+}
+
+.proyectos-elemento:hover {
     scale: 1.05;
 }
+
 .protectos-elemento-showcase-imagen {
     width: 100%;
-}.proyectos-elemento-detalles {
+}
+
+.proyectos-elemento-detalles {
     padding: 0.5rem;
-}.proyectos-elemento-nombre {
+}
+
+.proyectos-elemento-nombre {
     font-weight: bold;
     font-size: 1.25rem;
-}.proyectos-elemento-tecnologias {
+}
+
+.proyectos-elemento-tecnologias {
     display: flex;
-}.proyectos-elemento-tecnologias-boton {
+}
+
+.proyectos-elemento-tecnologias-boton {
     font-size: 0.80rem;
     padding: 0.25rem 1rem 0.25rem 1rem;
     margin: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -176,9 +355,13 @@ body {
     color: var(--claroVerde);
     font-weight: bold;
     border-radius: 0.5rem;
-}.proyectos-elemento-links {
+}
+
+.proyectos-elemento-links {
     display: flex;
-}.proyectos-elemento-links-boton {
+}
+
+.proyectos-elemento-links-boton {
     font-size: 0.80rem;
     padding: 0.25rem 1rem 0.25rem 1rem;
     margin: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -187,45 +370,23 @@ body {
     font-weight: bold;
     border-radius: 0.5rem;
     text-decoration: none;
-}.proyectos-elemento-links-boton:hover {
+}
+
+.proyectos-elemento-links-boton:hover {
     scale: 1.05;
 }
 
-/* -------------------- REDES SOCIALES ----------------------- */
-
-.redes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* centra las filas */
-    align-items: center;
-    justify-items: center;
-    gap: 1rem; /* espacio entre ítems */
-}
-
-.redes-elemento{
-    /*border: solid var(--verdeFuerte) 3px;*/
-    background-color: var(--verdeContraste);
-    border-radius: 0.5rem;
-    flex: 1 1 calc(10% - 1rem); /* hasta 10 columnas */
-    max-width: calc(10% - 1rem);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 0; /* el gap ya maneja el espaciado */
-    min-width: 200px; /* opcional: evita que los elementos se hagan muy pequeños */
-    text-align: center;
-}
-
-.redes-elemento-icono{
-    width: 50%;
-}
 
 /* -------------------- CONTACTO ----------------------- */
 
-.contacto{ 
+.contacto {
     /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
     justify-content: center;
     align-content: center;
-}.contacto-formulario{
+}
+
+.contacto-formulario {
     /*border: solid var(--verdeFuerte) 3px;*/
     padding: 2.5rem;
     border-radius: 1rem;
@@ -233,24 +394,36 @@ body {
     flex-direction: column;
     width: 60%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}.contacto-formulario-titulo{
+}
+
+.contacto-formulario-titulo {
     font-weight: bold;
     font-size: 1.5rem;
-}.contacto-formulario-elemento{
+}
+
+.contacto-formulario-elemento {
     margin: 0.5rem 0rem 0.5rem 0rem;
-}.contacto-formulario-etiqueta{
+}
+
+.contacto-formulario-etiqueta {
     font-weight: bold;
-}.contacto-formulario-campo-texto{
+}
+
+.contacto-formulario-campo-texto {
     height: 2rem;
     width: 100%;
     border: none;
     border-radius: 0.5rem;
-}.contacto-formulario-campo-textarea{
+}
+
+.contacto-formulario-campo-textarea {
     height: 6rem;
     width: 100%;
     border: none;
     border-radius: 0.5rem;
-}.contacto-formulario-boton{
+}
+
+.contacto-formulario-boton {
     font-size: 1rem;
     padding: 0.25rem 1rem 0.25rem 1rem;
     margin: 0.5rem 0.25rem 0.25rem 0.25rem;
@@ -259,13 +432,15 @@ body {
     font-weight: bold;
     border-radius: 0.5rem;
     width: fit-content;
-}.contacto-formulario-boton:hover{
+}
+
+.contacto-formulario-boton:hover {
     scale: 1.025;
 }
 
 /* -------------------- FOOTER ----------------------- */
 
-.footer{
+.footer {
     background-color: var(--verdeFuerte);
     height: 8rem;
 }
@@ -274,15 +449,19 @@ body {
 
 @media (max-width: 900px) {
     .grid-item {
-      flex: 1 1 calc(50% - 1rem);
-      max-width: calc(50% - 1rem);
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
     }
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
+
+    .social-media-div {
+        text-align: center;
+    }
+
     .grid-item {
-      flex: 1 1 100%;
-      max-width: 100%;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
-  }
-  
+}
