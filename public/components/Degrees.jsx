@@ -2,20 +2,27 @@ import { Link } from "react-router-dom";
 
 const Degrees = (props) => {
 
-    const { img, titulo, texto, fecha, link } = props;
+    const { img, nombre, grado, fecha, link, summary } = props;
 
     return (
         <>
-            <Link className="educacion-elemento" to={link} target="_blank" rel="noopener noreferrer" >
-                <div className="educacion-elemento-imagen">
-                    <img src={img} alt="" className="educacion-elemento-imagen-imagen" />
+            <div className="education-element">
+                <div className="education-element-image">
+                    <img src={img} alt={nombre} className="education-element-image-image" />
                 </div>
-                <div className="educacion-elemento-texto">
-                    <div className="educacion-elemento-texto-titulo">{titulo}</div>
-                    <div className="educacion-elemento-texto-texto">{texto}</div>
+                <div className="education-element-content">
+                    <div className="education-element-content-header">
+                        <div className="education-school-degree">
+                            <div className="school-name">{nombre}</div>
+                            <div className="school-degree">{grado}</div>
+                        </div>
+                        <div className="education-school-time">{fecha}</div>
+                    </div>
+                    <div className="education-element-content-details">
+                        {summary}
+                    </div>
                 </div>
-                <div className="educacion-elemento-fecha">{fecha}</div>
-            </Link>
+            </div>
         </>
     )
 }

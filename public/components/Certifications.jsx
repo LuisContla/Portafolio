@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
 
+import plch from "../images/FotoProyecto.jpg";
+
 const Certifications = (props) => {
 
-    const { img, titulo, texto, fecha, link } = props;
+    const { img, curso, institucion, link } = props;
 
     return (
         <>
-            <Link className="educacion-elemento" to={link} target="_blank" rel="noopener noreferrer" >
-                <div className="educacion-elemento-imagen">
-                    <img src={img} alt="" className="educacion-elemento-imagen-imagen" />
-                </div>
-                <div className="educacion-elemento-texto">
-                    <div className="educacion-elemento-texto-titulo">{titulo}</div>
-                    <div className="educacion-elemento-texto-texto">{texto}</div>
-                </div>
-                <div className="educacion-elemento-fecha">{fecha}</div>
-            </Link>
+            <div className="certifications-element">
+                    <div className="certifications-element-image">
+                        <img src={img} alt={institucion} className="certifications-element-image-image"/>
+                    </div>
+                    <div className="certifications-element-content">
+                        <div className="certification-name">{curso}</div>
+                        <div className="certification-institution">{institucion}</div>
+                    </div>
+            </div>
         </>
     )
 }

@@ -9,7 +9,7 @@ export default class EducationImg extends Component {
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         // xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="675"
+        width="625"
         // height="574.03802"
         viewBox="0 0 795.39431 574.03802"
       >

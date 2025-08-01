@@ -2,9 +2,9 @@ import EducacionElemento from "../components/EducacionElemento";
 import ProyectCard from "../components/ProyectCard";
 import Habilidad from "../components/Habiilidad";
 
-import ECA from "../images/ECA.jpeg";
+import ECA from "../images/ECA.png";
 import CECYT9 from "../images/CECyT9.png";
-import ESCOM from "../images/ESCOM.jpg";
+import ESCOM from "../images/ESCOM.png";
 
 import placeImg from "../images/FotoProyecto.jpg";
 import Encriptador from "../images/Encriptador.png";
