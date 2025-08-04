@@ -424,6 +424,37 @@ nav {
     scale: 1.05;
 }
 
+/* -------------------- CURRÍCULUM ----------------------- */
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.resume-download-button{
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+.resume-download-button a{
+    font-size: 1.5rem;
+    color: var(--claro);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #386543;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.resume-preview{
+    width: 70%;
+}
+
+.resume-preview-image{
+    width: 100%;
+}
 
 /* -------------------- CONTACTO ----------------------- */
 
