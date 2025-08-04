@@ -1,15 +1,8 @@
-import EducacionElemento from "../components/EducacionElemento";
 import ProyectCard from "../components/ProyectCard";
-import Habilidad from "../components/Habiilidad";
 
 import ECA from "../images/ECA.png";
 import CECYT9 from "../images/CECyT9.png";
 import ESCOM from "../images/ESCOM.png";
-
-import placeImg from "../images/FotoProyecto.jpg";
-import Encriptador from "../images/Encriptador.png";
-import DaysOfCode from "../images/7DaysOfCode.png";
-import AluraFlix from "../images/AluraFlix.png";
 
 import Greeting from "../components/Greeting";
 import WhatIDo from "../components/WhatIDo";
@@ -24,15 +17,6 @@ function Home() {
                 {/* <div className="seccion" id="About">
                     <div className="seccion-titulo">Acerca de mi</div>
                     <div className="about-texto">Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Confío plenamente en mi capacidad de producir ideas interesantes para el desarrollo de nuevos softwares útiles. Mi objetivo es aportar mi experiencia y conocimiento en programación y tecnología a empresas e instituciones</div>
-                </div>
-                <div className="seccion">
-                    <div className="seccion-titulo">Educación</div>
-                    <div className="educacion">
-                        <br />
-                        <EducacionElemento img={ECA} titulo="Centro Educativo ECA" texto="Educación Básica" fecha="2009-2018" link="https://www.ecagrupoeducativo.mx/eca" />
-                        <EducacionElemento img={CECYT9} titulo="CECyT 9 Juan de Dios Bátiz" texto="Técnico en Programación" fecha="2018-2021" link="https://www.cecyt9.ipn.mx/" />
-                        <EducacionElemento img={ESCOM} titulo="Escuela Superior de Cómputo" texto="Ingeniero en Sistemas Comuptacionales" fecha="2021-Actualidad" link="https://www.escom.ipn.mx/" />
-                    </div>
                 </div>
                 <div className="seccion">
                     <div className="seccion-titulo">Habilidades</div>

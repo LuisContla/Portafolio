@@ -11,8 +11,7 @@ const ProyectCard = (props) => {
                     <img src={img} alt="" className="protectos-elemento-showcase-imagen" />
                 </div>
                 <div className="proyectos-elemento-detalles">
-                    <div className="proyectos-elemento-nombre">{titulo}</div>
-                    <div className="proyectos-elemento-fecha">{fecha}</div>
+                    <div className="proyectos-elemento-nombre">{titulo} - {fecha}</div>
                     <div className="proyectos-elemento-texto">{texto}</div>
                     <div className="proyectos-elemento-tecnologias">
                         <div className="proyectos-elemento-tecnologias-boton">HTML</div>

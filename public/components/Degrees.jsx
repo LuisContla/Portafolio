@@ -19,7 +19,8 @@ const Degrees = (props) => {
                         <div className="education-school-time">{fecha}</div>
                     </div>
                     <div className="education-element-content-details">
-                        {summary}
+                        <p>{summary}</p>
+                        <Link className="education-button" to={link} target="_blank" rel="noopener noreferrer" >Visitar Sitio Web</Link>
                     </div>
                 </div>
             </div>

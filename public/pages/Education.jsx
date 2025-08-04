@@ -1,5 +1,3 @@
-import EducacionElemento from "../components/EducacionElemento";
-
 import ECA from "../images/ECA.png";
 import CECYT9 from "../images/CECyT9.png";
 import ESCOM from "../images/ESCOM.png";
@@ -30,9 +28,9 @@ function Education() {
                 </div>
                 <div className="education">
                     <div className="education-title">Trayectoria Académica</div>
-                    <Degrees img={ECA} nombre="Centro Educativo ECA" grado="Educación Básica" fecha="2009-2018" link="https://www.ecagrupoeducativo.mx/eca" />
-                    <Degrees img={CECYT9} nombre="CECyT 9 Juan de Dios Bátiz" grado="Técnico en Programación" fecha="2018-2021" link="https://www.cecyt9.ipn.mx/" />
-                    <Degrees img={ESCOM} nombre="Escuela Superior de Cómputo" grado="Ingeniero en Sistemas Comuptacionales" fecha="2021-Actualidad" link="https://www.escom.ipn.mx/" />
+                    <Degrees img={ECA} nombre="Centro Educativo ECA" grado="Educación Básica" fecha="2009-2018" link="https://www.ecagrupoeducativo.mx/eca" summary="Lorem Ipsum es un texto de marcador de posición utilizado comúnmente en diseño gráfico y tipografía. Se trata de una secuencia de palabras en latín que no forman oraciones con sentido completo, pero que sirven para llenar espacios en documentos y maquetas antes de insertar el texto final."/>
+                    <Degrees img={CECYT9} nombre="CECyT 9 Juan de Dios Bátiz" grado="Técnico en Programación" fecha="2018-2021" link="https://www.cecyt9.ipn.mx/" summary="Lorem Ipsum es un texto de marcador de posición utilizado comúnmente en diseño gráfico y tipografía. Se trata de una secuencia de palabras en latín que no forman oraciones con sentido completo, pero que sirven para llenar espacios en documentos y maquetas antes de insertar el texto final."/>
+                    <Degrees img={ESCOM} nombre="Escuela Superior de Cómputo" grado="Ingeniero en Sistemas Comuptacionales" fecha="2021-Actualidad" link="https://www.escom.ipn.mx/" summary="Lorem Ipsum es un texto de marcador de posición utilizado comúnmente en diseño gráfico y tipografía. Se trata de una secuencia de palabras en latín que no forman oraciones con sentido completo, pero que sirven para llenar espacios en documentos y maquetas antes de insertar el texto final."/>
                 </div>
                 <div className="certifications">
                     <div className="education-title">Certificaciones</div>

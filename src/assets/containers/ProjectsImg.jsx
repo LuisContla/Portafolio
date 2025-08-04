@@ -9,7 +9,7 @@ export default class ProjectsImg extends Component {
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         // xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="711.1879"
+        width="650"
         // height="707.8"
         viewBox="0 0 1103.79 707.8"
       >
