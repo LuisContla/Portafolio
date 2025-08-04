@@ -98,7 +98,9 @@ nav {
 .nombre-imagen-imagen {
     width: 100%;
     height: auto;
-    /* clip-path: circle(50% at 50% 50%); */
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
+    border: solid 0.5rem var(--verdeContraste);
 }
 
 .nombre-texto {
@@ -459,10 +461,13 @@ nav {
 /* -------------------- CONTACTO ----------------------- */
 
 .contacto {
-    /*border: solid var(--verdeFuerte) 3px;*/
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    text-align: left;
 }
 
 .contacto-formulario {

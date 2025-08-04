@@ -7,13 +7,14 @@ import Home from "../public/pages/Home";
 import Education from "../public/pages/Education";
 import Proyects from "../public/pages/Proyects";
 import Resume from "../public/pages/Resume";
+import ContacMe from "../public/pages/ContactMe";
 
 function App() {
 
   return (
     <>
       <Nav />
-      <Resume />
+      <ContacMe />
       <Footer />
     </>
   )
