@@ -240,6 +240,7 @@ nav {
     justify-content: space-between;
     width: 80%;
     margin: 1rem 0rem 1rem 0rem;
+    align-items: center;
 }
 
 .education-element-image {
@@ -252,6 +253,7 @@ nav {
     width: 80%;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--claro);
 }
 
 .education-element-content {
@@ -525,8 +527,17 @@ nav {
 /* -------------------- FOOTER ----------------------- */
 
 .footer {
-    background-color: var(--verdeFuerte);
-    height: 8rem;
+    background-color: var(--verdeContraste);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-element{
+    color: var(--claro);
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
 }
 
 /* -------------------- RESPONSIVIDAD ----------------------- */

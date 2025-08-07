@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Nav />
-      <ContacMe />
+      <Education />
       <Footer />
     </>
   )
