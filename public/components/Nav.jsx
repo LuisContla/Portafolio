@@ -1,20 +1,21 @@
-function Nav() {
+import { Link } from 'react-router-dom';
 
+function Nav() {
     return (
         <>
             <nav>
                 <div className="nav-logo">FIRMA</div>
                 <div className="nav-buttons">
-                    <a className="nav-element" href="">Inicio</a>
-                    <a className="nav-element" href="">Educación</a>
-                    <a className="nav-element" href="">Experiencia</a>
-                    <a className="nav-element" href="">Proyectos</a>
-                    <a className="nav-element" href="">Currículum</a>
-                    <a className="nav-element" href="">Contáctame</a>
+                    <Link className="nav-element" to="/">Inicio</Link>
+                    <Link className="nav-element" to="/education">Educación</Link>
+                    {/* <Link className="nav-element" to="/experience">Experiencia</Link> */}
+                    <Link className="nav-element" to="/projects">Proyectos</Link>
+                    <Link className="nav-element" to="/resume">Currículum</Link>
+                    <Link className="nav-element" to="/contact">Contáctame</Link>
                 </div>
             </nav>
         </>
-    )
+    );
 }
 
-export default Nav
+export default Nav;
