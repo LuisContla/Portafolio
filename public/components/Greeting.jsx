@@ -17,7 +17,6 @@ function Greeting() {
                     </div>
                 </div>
                 <div className="nombre-imagen">
-                    {/* <img className="nombre-imagen-imagen" src={pfp} alt="Luis Andrés Contla Mota" /> */}
                     <FeelingProud theme={chosenTheme} />
                 </div>
             </div>

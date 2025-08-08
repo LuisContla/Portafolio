@@ -24,19 +24,22 @@ body {
 nav {
     background-color: var(--verdeContraste);
     display: flex;
-    padding: 1rem 5rem 1rem 5rem;
+    padding: 1rem 5rem;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav-logo {
     width: 35%;
-    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--claro);
 }
 
 .nav-buttons {
     width: 65%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -45,12 +48,16 @@ nav {
     font-weight: bold;
     color: var(--claro);
     text-decoration: none;
-    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    padding: 0.75rem 1.25rem;
     transition: 0.3s;
 }
 
 .nav-element:hover {
     background-color: #6A8E7F;
+}
+
+.hamburger-button {
+    display: none;
 }
 
 /* --------------------  ----------------------- */
@@ -152,7 +159,6 @@ nav {
 }
 
 .whatido-section {
-    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -160,8 +166,17 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+.whatido-odd {
+    flex-direction: row-reverse;
+}
+
 .whatido-section-image {
     width: 45%;
+}
+
+.whatido-imagen-imagen {
+    width: 100%;
+    height: auto;
 }
 
 .whatido-section-text {
@@ -285,7 +300,7 @@ nav {
     align-items: end;
 }
 
-.education-button{
+.education-button {
     padding: 0.75rem;
     margin-top: 0.5rem;
     font-weight: bold;
@@ -295,7 +310,9 @@ nav {
     color: var(--claro);
     text-decoration: none;
     width: fit-content;
-}.education-button:hover{
+}
+
+.education-button:hover {
     background-color: var(--verdeFuerte);
 }
 
@@ -316,28 +333,30 @@ nav {
     margin: 0.5rem;
 }
 
-.certifications-element-image{
+.certifications-element-image {
     display: flex;
     justify-content: space-between;
     color: var(--claroVerde);
     font-weight: bold;
-}.certifications-element-image-image{
+}
+
+.certifications-element-image-image {
     border-radius: 0.5rem 0.5rem 0rem 0rem;
     width: 100%
 }
 
-.certifications-element-content{
+.certifications-element-content {
     display: flex;
     flex-direction: column;
     border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
-.certification-name{
+.certification-name {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.certification-institution{
+.certification-institution {
     font-size: 1.25rem;
 }
 
@@ -413,7 +432,7 @@ nav {
 
 /* -------------------- CURRÍCULUM ----------------------- */
 
-.resume{
+.resume {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -421,11 +440,11 @@ nav {
     padding: 2rem;
 }
 
-.resume-download-button{
+.resume-download-button {
     margin: 3rem 0rem 3rem 0rem;
 }
 
-.resume-download-button a{
+.resume-download-button a {
     font-size: 1.5rem;
     color: var(--claro);
     text-decoration: none;
@@ -435,11 +454,11 @@ nav {
     border-radius: 0.5rem;
 }
 
-.resume-preview{
+.resume-preview {
     width: 70%;
 }
 
-.resume-preview-image{
+.resume-preview-image {
     width: 100%;
 }
 
@@ -523,7 +542,7 @@ nav {
     align-items: center;
 }
 
-.footer-element{
+.footer-element {
     color: var(--claro);
     font-weight: bold;
     width: 30%;
@@ -533,14 +552,86 @@ nav {
 
 /* -------------------- RESPONSIVIDAD ----------------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 970px) {
+
+
+    /* -------------------- EDUCACION ----------------------- */
+
+    .education-element {
+        width: 90%;
+    }
+
+    .education-element-image {
+        width: 30%;
+    }
+
+    .education-element-content {
+        width: 70%;
+    }
+
+    .certifications-element {
+        width: 45%;
+    }
+
     .grid-item {
         flex: 1 1 calc(50% - 1rem);
         max-width: calc(50% - 1rem);
     }
+
+    /* -------------------- NAVEGACIÓN ----------------------- */
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-logo {
+        width: auto;
+    }
+
+    .nav-buttons {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--verdeContraste);
+        z-index: 10;
+        padding-top: 1rem;
+    }
+
+    .nav-buttons.open {
+        display: flex;
+    }
+
+    .hamburger-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: var(--claro);
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .nav-element {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* -------------------- PROYECTOS ----------------------- */
+
+    .proyectos-elemento {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
 
     .social-media-div {
         text-align: center;
@@ -550,4 +641,78 @@ nav {
         flex: 1 1 100%;
         max-width: 100%;
     }
+
+    /* -------------------- SALUDO ----------------------- */
+
+    .nombre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nombre-titulo {
+        width: 100%;
+    }
+
+    .nombre-imagen {
+        width: 100%;
+    }
+
+    /* -------------------- REDES SOCIALES ----------------------- */
+
+    .redes {
+        justify-content: center;
+    }
+
+    /* -------------------- LO QUE HAGO ----------------------- */
+
+    .whatido-section {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .whatido-section-image {
+        width: 100%;
+    }
+
+    .whatido-section-text {
+        margin-bottom: 1.5rem;
+    }
+
+    .whatido-section-text-summary {
+        align-items: self-start;
+    }
+
+    /* -------------------- EDUCACION ----------------------- */
+
+    .education-element {
+        flex-direction: column;
+    }
+
+    .education-element-image {
+        width: 75%;
+        margin-bottom: 1.5rem;
+    }
+
+    .education-element-content {
+        width: 100%;
+    }
+
+    .certifications-element {
+        width: 100%;
+    }
+
+    /* -------------------- PROYECTOS ----------------------- */
+
+    .proyectos-elemento {
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+    /* -------------------- CURRÍCULUM ----------------------- */
+
+    .resume-preview {
+        width: 90%;
+    }
+
 }

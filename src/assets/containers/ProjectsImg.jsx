@@ -12,6 +12,7 @@ export default class ProjectsImg extends Component {
         width="650"
         // height="707.8"
         viewBox="0 0 1103.79 707.8"
+        className="nombre-imagen-imagen"
       >
         <defs>
           <linearGradient

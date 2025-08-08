@@ -11,6 +11,7 @@ export default class FullStackImg extends Component {
         width="711.1879"
         // height="669.68268"
         viewBox="0 0 1098.75 632.37039"
+        className="whatido-imagen-imagen"
       >
         <title>heatmap</title>
         <ellipse

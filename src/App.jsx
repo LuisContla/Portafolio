@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duración de la animación en milisegundos
+      duration: 1500, // Duración de la animación en milisegundos
       easing: 'ease-in-out', // Tipo de transición
       once: true, // Si la animación debe ocurrir solo una vez
     });

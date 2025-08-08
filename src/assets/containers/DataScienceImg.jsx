@@ -11,6 +11,7 @@ export default class DataScienceImg extends Component {
         width="711.1879"
         // height="829.80067"
         viewBox="0 0 1120 829.80067"
+        className="whatido-imagen-imagen"
       >
         <title>all the data</title>
         <ellipse
