@@ -6,7 +6,7 @@ const ProyectCard = (props) => {
 
     return (
         <>
-            <div className="proyectos-elemento">
+            <div className="proyectos-elemento" data-aos="flip-right">
                 <div className="proyectos-elemento-showcase">
                     <img src={img} alt="" className="protectos-elemento-showcase-imagen" />
                 </div>

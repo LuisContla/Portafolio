@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Nav() {
     return (
         <>
-            <nav>
+            <nav data-aos="flip-up">
                 <div className="nav-logo">FIRMA</div>
                 <div className="nav-buttons">
                     <Link className="nav-element" to="/">Inicio</Link>

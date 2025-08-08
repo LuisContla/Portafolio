@@ -16,7 +16,7 @@ function Education() {
     return (
         <>
             <div className="contenedor-principal">
-                <div className="nombre">
+                <div className="nombre" data-aos="fade-up">
                     <div className="nombre-titulo">
                         <div className="nombre-nombre">Proyectos</div>
                         <br />
@@ -27,7 +27,7 @@ function Education() {
                     </div>
                 </div>
                 <div className="education">
-                    <div className="education-title">Algunos de mis Proyectos</div>
+                    <div className="education-title" data-aos="fade-up">Algunos de mis Proyectos</div>
                     <div className="proyectos">
                         <ProyectCard img={Encriptador} titulo="Encriptador de Texto" texto="Encripador de Texto creado para el curso de Alura ONE por Oracle" fecha="2024" git="https://github.com/LuisContla/Encriptador-de-Texto" web="https://encriptador-de-texto-beryl.vercel.app/" />
                         <ProyectCard img={DaysOfCode} titulo="7 Days of Code" texto="Me propuse completar el '7 Days of Code' creado por Jose González, Instructor Front-End en Alura, para mejorar mis habilidades en lógica de programación. Estos desafíos los recopilé en una página Web." fecha="2024" git="https://github.com/LuisContla/7-Days-of-Code" web="https://7-days-of-code-jet.vercel.app/" />

@@ -8,7 +8,7 @@ const Certifications = (props) => {
 
     return (
         <>
-            <div className="certifications-element">
+            <div className="certifications-element" data-aos="zoom-in">
                     <div className="certifications-element-image">
                         <img src={img} alt={institucion} className="certifications-element-image-image"/>
                     </div>

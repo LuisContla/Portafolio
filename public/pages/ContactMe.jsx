@@ -5,7 +5,7 @@ function ContactMe() {
     return (
         <>
             <div className="contenedor-principal">
-                <div className="nombre">
+                <div className="nombre" data-aos="fade-up">
                     <div className="nombre-titulo">
                         <div className="nombre-nombre">Contáctame</div>
                         <br />
@@ -16,8 +16,8 @@ function ContactMe() {
                     </div>
                 </div>
                 <div className="education">
-                    <div className="education-title">Mándame un Correo</div>
-                    <div className="contacto">
+                    <div className="education-title" data-aos="fade-up">Mándame un Correo</div>
+                    <div className="contacto" data-aos="fade-up">
                         <div className="contacto-formulario">
                             <div className="contacto-formulario-titulo">
                                 Envía un mensaje

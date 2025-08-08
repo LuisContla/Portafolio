@@ -6,7 +6,7 @@ function Greeting() {
 
     return (
         <>
-            <div className="nombre">
+            <div className="nombre" data-aos="fade-up">
                 <div className="nombre-titulo">
                     <div className="nombre-nombre">¡Hola! Soy Luis Contla</div>
                     <br />

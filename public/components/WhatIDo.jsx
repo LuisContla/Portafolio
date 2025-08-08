@@ -9,12 +9,12 @@ function WhatIDo() {
     return (
         <>
             <div className="whatido">
-                <div className="whatido-titulo">
+                <div className="whatido-titulo" data-aos="fade-up">
                     ¿Qué es lo que hago?
                 </div>
                 <br />
                 {/* ---------- Sección ---------- */}
-                <div className="whatido-section">
+                <div className="whatido-section" data-aos="fade-right">
                     <div className="whatido-section-image">
                         <FullStack theme={chosenTheme} />
                     </div>
@@ -36,7 +36,7 @@ function WhatIDo() {
                     </div>
                 </div>
                 {/* ---------- Sección ---------- */}
-                <div className="whatido-section">
+                <div className="whatido-section" data-aos="fade-left">
                     <div className="whatido-section-text">
                         <div className="whatido-section-text-title">Gestión de Proyectos</div>
                         <div className="whatido-section-text-technologies">

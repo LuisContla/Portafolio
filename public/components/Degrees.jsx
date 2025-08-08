@@ -6,7 +6,7 @@ const Degrees = (props) => {
 
     return (
         <>
-            <div className="education-element">
+            <div className="education-element" data-aos="fade-right">
                 <div className="education-element-image">
                     <img src={img} alt={nombre} className="education-element-image-image" />
                 </div>
