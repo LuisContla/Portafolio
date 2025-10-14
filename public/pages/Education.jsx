@@ -35,7 +35,7 @@ function Education() {
                 <div className="certifications">
                     <div className="education-title" data-aos="fade-up">Certificaciones</div>
                     <dev className="certifications-container">
-                        <Certifications img={ONE} curso="Oracle Next Education" institucion="Oracle" link/>
+                        <Certifications img={ONE} curso="Oracle Next Education" institucion="Oracle" link="/alura"/>
                         <Certifications img={Santander} curso="Python" institucion="Santander Open Academy" link/>
                     </dev>
                 </div>

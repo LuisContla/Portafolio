@@ -9,13 +9,16 @@ const Certifications = (props) => {
     return (
         <>
             <div className="certifications-element" data-aos="zoom-in">
-                    <div className="certifications-element-image">
-                        <img src={img} alt={institucion} className="certifications-element-image-image"/>
-                    </div>
-                    <div className="certifications-element-content">
-                        <div className="certification-name">{curso}</div>
-                        <div className="certification-institution">{institucion}</div>
-                    </div>
+                <div className="certifications-element-image">
+                    <img src={img} alt={institucion} className="certifications-element-image-image" />
+                </div>
+                <div className="certifications-element-content">
+                    <div className="certification-name">{curso}</div>
+                    <div className="certification-institution">{institucion}</div>
+                </div>
+                <div className="certifications-element-button">
+                    <Link className="education-button" to={link} target="_blank" rel="noopener noreferrer" >Visitar Sitio Web</Link>
+                </div>
             </div>
         </>
     )

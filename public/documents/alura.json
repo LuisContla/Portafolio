@@ -1,0 +1,360 @@
+[
+    {
+        "curso": "Lógica de programación: sumérgete en la programación con JavaScript",
+        "fecha_finalizacion": "23/06/2024",
+        "categoria": "Programación",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/logica-programacion-sumergete-programacion-javascript.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/logica-programacion-sumergete-programacion-javascript/certificate"
+    },
+    {
+        "curso": "Lógica de programación: explorar funciones y listas",
+        "fecha_finalizacion": "15/07/2024",
+        "categoria": "Programación",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/logica-programacion-explorar-funciones-listas.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/logica-programacion-explorar-funciones-listas/certificate"
+    },
+    {
+        "curso": "ChatGPT: optimizando la calidad de los resultados",
+        "fecha_finalizacion": "24/07/2024",
+        "categoria": "Inteligencia Artificial",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/chatgpt-optimizando-calidad-resultados.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/chatgpt-optimizando-calidad-resultados/certificate"
+    },
+    {
+        "curso": "HTML y CSS: ambientes de desarrollo, estructura de archivos y tags",
+        "fecha_finalizacion": "24/07/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/html-css-desarrollo-estructura-archivos-tags.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/html-css-desarrollo-estructura-archivos-tags/certificate"
+    },
+    {
+        "curso": "HTML y CSS: Clases, Posicionamiento y Flexbox",
+        "fecha_finalizacion": "29/07/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/html-css-clases-posicionamiento-flexbox.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/html-css-clases-posicionamiento-flexbox/certificate"
+    },
+    {
+        "curso": "HTML y CSS: header, footer y variables CSS",
+        "fecha_finalizacion": "29/07/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/html-css-header-footer-variables-css.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/html-css-header-footer-variables-css/certificate"
+    },
+    {
+        "curso": "Git y GitHub: repositorio, commit y versiones",
+        "fecha_finalizacion": "12/08/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/git-github-repositorio-commit-versiones.svg",
+        "certificado": "https://app.aluracursos.com/certificate/luis-contla/git-github-repositorio-commit-versiones"
+    },
+    {
+        "curso": "HTML y CSS: trabajando con responsividad y publicación de proyectos",
+        "fecha_finalizacion": "05/08/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/html-css-trabajando-responsividad-publicacion-proyectos.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/html-css-trabajando-responsividad-publicacion-proyectos/certificate"
+    },
+    {
+        "curso": "Practicando lógica de programación: Challenge Encriptador de texto",
+        "fecha_finalizacion": "05/08/2024",
+        "categoria": "Programación",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/challenge-encriptador-texto.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/challenge-encriptador-texto/certificate",
+        "demo": "https://encriptador-de-texto-beryl.vercel.app/"
+    },
+    {
+        "curso": "LinkedIn: Como hacer que tu perfil trabaje por ti",
+        "fecha_finalizacion": "15/08/2024",
+        "categoria": "Desarrollo Profesional",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/linkedin-hacer-perfil-trabaje-por-ti.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/linkedin-hacer-perfil-trabaje-por-ti/certificate"
+    },
+    {
+        "curso": "Aprender a aprender: técnicas para tu autodesarrollo",
+        "fecha_finalizacion": "20/08/2024",
+        "categoria": "Desarrollo Personal",
+        "icono": "https://www.aluracursos.com/assets/api/cursos/aprender-a-aprender-tecnicas-autodesarrollo.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/aprender-a-aprender-tecnicas-autodesarrollo/certificate"
+    },
+    {
+        "curso": "Foco: Enfocarse trae más resultados para el día a día",
+        "fecha_finalizacion": "21/08/2024",
+        "categoria": "Desarrollo Personal",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "Hábitos: Ser productivo para cumplir sus metas personales",
+        "fecha_finalizacion": "26/08/2024",
+        "categoria": "Desarrollo Personal",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "Desarrollo de carrera: demanda del mercado",
+        "fecha_finalizacion": "05/09/2024",
+        "categoria": "Desarrollo Profesional",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "Propósito profesional: ser el protagonista de tu carrera",
+        "fecha_finalizacion": "11/09/2024",
+        "categoria": "Desarrollo Personal",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "Fundamentos de Agilidad: Primeros pasos para la transformación ágil",
+        "fecha_finalizacion": "23/09/2024",
+        "categoria": "Metodologías Ágiles",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "Transición de carrera: una guía al campo de tecnología",
+        "fecha_finalizacion": "23/09/2024",
+        "categoria": "Desarrollo Profesional",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "Emprendimiento: De la idea al plan de negocios",
+        "fecha_finalizacion": "01/10/2024",
+        "categoria": "Desarrollo Profesional",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "IA generativa en Front-End: trabajando con semántica y HTML",
+        "fecha_finalizacion": "02/10/2024",
+        "categoria": "Inteligencia Artificial",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "CSS: Flexbox y layouts responsivos",
+        "fecha_finalizacion": "17/10/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "",
+        "certificado": ""
+    },
+    {
+        "curso": "JavaScript para web: crea páginas dinámicas",
+        "fecha_finalizacion": "09/11/2024",
+        "categoria": "Programación",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "JavaScript: manipulando elementos en el DOM",
+        "fecha_finalizacion": "15/11/2024",
+        "categoria": "Programación",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "ChatGPT y JavaScript: construyendo el juego Pong",
+        "fecha_finalizacion": "22/11/2024",
+        "categoria": "Inteligencia Artificial",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "JavaScript: consumiendo y manejando datos de una API",
+        "fecha_finalizacion": "26/11/2024",
+        "categoria": "Programación",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Practicando Front End: Challenge Portafolio",
+        "fecha_finalizacion": "26/11/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "JavaScript: creando solicitudes",
+        "fecha_finalizacion": "28/11/2024",
+        "categoria": "Programación",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "GitHub Copilot y ChatGPT: impulsa tu desarrollo con IA",
+        "fecha_finalizacion": "10/12/2024",
+        "categoria": "Inteligencia Artificial",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Practicando Front End: Challenge AluraGeek",
+        "fecha_finalizacion": "10/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "React: desarrollando con JavaScript",
+        "fecha_finalizacion": "14/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "React: como los componentes funcionan",
+        "fecha_finalizacion": "15/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "React Router: Navegación en una SPA",
+        "fecha_finalizacion": "18/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "React: practicando React con JS",
+        "fecha_finalizacion": "28/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "React: Function Components",
+        "fecha_finalizacion": "27/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Hooks en ReactJS: conociendo su potencial y utilidad",
+        "fecha_finalizacion": "22/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "React: Styled Components y manipulando archivos estáticos",
+        "fecha_finalizacion": "22/12/2024",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Practicando React: Challenge Aluraflix",
+        "fecha_finalizacion": "02/01/2025",
+        "categoria": "Desarrollo Front-End",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Landing Page con IA: construye una página web funcional",
+        "fecha_finalizacion": "31/01/2025",
+        "categoria": "Inteligencia Artificial",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Inteligencia Artificial y UX: optimiza la construcción de un producto digital",
+        "fecha_finalizacion": "23/02/2025",
+        "categoria": "Inteligencia Artificial",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Python para Data Science: primeros pasos",
+        "fecha_finalizacion": "06/03/2025",
+        "categoria": "Data Science",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Python para Data Science: trabajar con funciones, estructuras de datos y excepciones",
+        "fecha_finalizacion": "12/03/2025",
+        "categoria": "Data Science",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Análisis de datos con Python: usando ChatGPT como asistente",
+        "fecha_finalizacion": "23/03/2025",
+        "categoria": "Data Science",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "GPT y Python: creando herramientas con API",
+        "fecha_finalizacion": "23/04/2025",
+        "categoria": "Inteligencia Artificial",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Consultas SQL: Avanzando en SQL con MySQL",
+        "fecha_finalizacion": "21/05/2025",
+        "categoria": "Bases de Datos",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Introducción a SQL con MySQL: Manipule y consulte datos",
+        "fecha_finalizacion": "21/05/2025",
+        "categoria": "Bases de Datos",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Oracle Cloud Infrastructure: implementación de una aplicación en la nube",
+        "fecha_finalizacion": "21/05/2025",
+        "categoria": "Cloud Computing",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Administración de MySQL: Seguridad y optimización de la base de datos - Parte 1",
+        "fecha_finalizacion": "23/05/2025",
+        "categoria": "Bases de Datos",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Administración de MySQL: Seguridad y optimización de la base de datos - Parte 2",
+        "fecha_finalizacion": "23/05/2025",
+        "categoria": "Bases de Datos",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Comandos DML: Manipulación de datos con MySQL",
+        "fecha_finalizacion": "23/05/2025",
+        "categoria": "Bases de Datos",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Oracle Cloud Infrastructure: base de datos e infraestructura como código",
+        "fecha_finalizacion": "23/05/2025",
+        "categoria": "Cloud Computing",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "Procedures SQL: Ejecutando código en MySQL",
+        "fecha_finalizacion": "23/05/2025",
+        "categoria": "Bases de Datos",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    },
+    {
+        "curso": "SQL con MySQL: Proyecto final",
+        "fecha_finalizacion": "23/05/2025",
+        "categoria": "Bases de Datos",
+        "icono": "https://tuservidor.com/icono-curso",
+        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+    }
+]
