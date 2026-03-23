@@ -81,280 +81,283 @@
         "curso": "Foco: Enfocarse trae más resultados para el día a día",
         "fecha_finalizacion": "21/08/2024",
         "categoria": "Desarrollo Personal",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/foco-habito-dia-a-dia.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/foco-habito-dia-a-dia/certificate"
     },
     {
         "curso": "Hábitos: Ser productivo para cumplir sus metas personales",
         "fecha_finalizacion": "26/08/2024",
         "categoria": "Desarrollo Personal",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/habitos-productivo-metas-personales.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/habitos-productivo-metas-personales/certificate"
     },
     {
         "curso": "Desarrollo de carrera: demanda del mercado",
         "fecha_finalizacion": "05/09/2024",
         "categoria": "Desarrollo Profesional",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/desarrollo-carrera-demanda-mercado.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/desarrollo-carrera-demanda-mercado/certificate"
     },
     {
         "curso": "Propósito profesional: ser el protagonista de tu carrera",
         "fecha_finalizacion": "11/09/2024",
         "categoria": "Desarrollo Personal",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/proposito-profesional-protagonista-carrera.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/proposito-profesional-protagonista-carrera/certificate"
     },
     {
         "curso": "Fundamentos de Agilidad: Primeros pasos para la transformación ágil",
         "fecha_finalizacion": "23/09/2024",
         "categoria": "Metodologías Ágiles",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/fundamentos-agilidad-primeros-pasos-transformacion-agil.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/fundamentos-agilidad-primeros-pasos-transformacion-agil/certificate"
     },
     {
         "curso": "Transición de carrera: una guía al campo de tecnología",
         "fecha_finalizacion": "23/09/2024",
         "categoria": "Desarrollo Profesional",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/transicion-carrera-guia-campo-tecnologia.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/transicion-carrera-guia-campo-tecnologia/certificate"
     },
     {
         "curso": "Emprendimiento: De la idea al plan de negocios",
         "fecha_finalizacion": "01/10/2024",
         "categoria": "Desarrollo Profesional",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/emprendimiento-idea-plan-negocios.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/emprendimiento-idea-plan-negocios/certificate"
     },
     {
         "curso": "IA generativa en Front-End: trabajando con semántica y HTML",
         "fecha_finalizacion": "02/10/2024",
         "categoria": "Inteligencia Artificial",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/ia-generativa-front-end-trabajando-semantica-html.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/ia-generativa-front-end-trabajando-semantica-html/certificate"
     },
     {
         "curso": "CSS: Flexbox y layouts responsivos",
         "fecha_finalizacion": "17/10/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "",
-        "certificado": ""
+        "icono": "https://www.aluracursos.com/assets/api/cursos/css-flexbox-layouts-responsivos.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/css-flexbox-layouts-responsivos/certificate"
     },
     {
         "curso": "JavaScript para web: crea páginas dinámicas",
         "fecha_finalizacion": "09/11/2024",
         "categoria": "Programación",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/javascript-web-paginas-dinamicas.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/javascript-web-paginas-dinamicas/certificate"
     },
     {
         "curso": "JavaScript: manipulando elementos en el DOM",
         "fecha_finalizacion": "15/11/2024",
         "categoria": "Programación",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/js-web-manipulacion-dom-javascript.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/js-web-manipulacion-dom-javascript/certificate"
     },
     {
         "curso": "ChatGPT y JavaScript: construyendo el juego Pong",
         "fecha_finalizacion": "22/11/2024",
         "categoria": "Inteligencia Artificial",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/chatgpt-javascript-construyendo-juego-pong.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/chatgpt-javascript-construyendo-juego-pong/certificate"
     },
     {
         "curso": "JavaScript: consumiendo y manejando datos de una API",
         "fecha_finalizacion": "26/11/2024",
         "categoria": "Programación",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/javascript-consumiendo-manejando-datos-api.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/javascript-consumiendo-manejando-datos-api/certificate"
     },
     {
         "curso": "Practicando Front End: Challenge Portafolio",
         "fecha_finalizacion": "26/11/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/challenge-portafolio-one.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/challenge-portafolio-one/certificate",
+        "demo": "https://portafolio-xi-eight-16.vercel.app/"
     },
     {
         "curso": "JavaScript: creando solicitudes",
         "fecha_finalizacion": "28/11/2024",
         "categoria": "Programación",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/javascript-creando-solicitudes.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/javascript-creando-solicitudes/certificate"
     },
     {
         "curso": "GitHub Copilot y ChatGPT: impulsa tu desarrollo con IA",
         "fecha_finalizacion": "10/12/2024",
         "categoria": "Inteligencia Artificial",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/github-copilot-chatgpt-impulsiona-desarrollo-ia.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/github-copilot-chatgpt-impulsiona-desarrollo-ia/certificate"
     },
     {
         "curso": "Practicando Front End: Challenge AluraGeek",
         "fecha_finalizacion": "10/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/challenge-alurageek.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/challenge-alurageek/certificate",
+        "demo": "https://alura-geek-kohl-delta.vercel.app/"
     },
     {
         "curso": "React: desarrollando con JavaScript",
         "fecha_finalizacion": "14/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/react-desarrollando-javascript.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/react-desarrollando-javascript/certificate"
     },
     {
         "curso": "React: como los componentes funcionan",
         "fecha_finalizacion": "15/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/react-como-componentes-funcionan.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/react-como-componentes-funcionan/certificate"
     },
     {
         "curso": "React Router: Navegación en una SPA",
         "fecha_finalizacion": "18/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/react-router-navegacion-spa.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/react-router-navegacion-spa/certificate"
     },
     {
         "curso": "React: practicando React con JS",
         "fecha_finalizacion": "28/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/react-practicando-react-js.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/react-practicando-react-js/certificate"
     },
     {
         "curso": "React: Function Components",
         "fecha_finalizacion": "27/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/react-components.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/react-components/certificate"
     },
     {
         "curso": "Hooks en ReactJS: conociendo su potencial y utilidad",
         "fecha_finalizacion": "22/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/react-hooks-contextos-buenas-practicas.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/react-hooks-contextos-buenas-practicas/certificate"
     },
     {
         "curso": "React: Styled Components y manipulando archivos estáticos",
         "fecha_finalizacion": "22/12/2024",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/react-styled-components-manipulando-archivos-estaticos.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/react-styled-components-manipulando-archivos-estaticos/certificate"
     },
     {
         "curso": "Practicando React: Challenge Aluraflix",
         "fecha_finalizacion": "02/01/2025",
         "categoria": "Desarrollo Front-End",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/challenge-aluraflix.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/challenge-aluraflix/certificate",
+        "demo": "https://alura-flix-27wq858v0-luiscontlas-projects.vercel.app/"
     },
     {
         "curso": "Landing Page con IA: construye una página web funcional",
         "fecha_finalizacion": "31/01/2025",
         "categoria": "Inteligencia Artificial",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/landing-page-ia-construye-pagina-web-funcional.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/landing-page-ia-construye-pagina-web-funcional/certificate"
     },
     {
         "curso": "Inteligencia Artificial y UX: optimiza la construcción de un producto digital",
         "fecha_finalizacion": "23/02/2025",
         "categoria": "Inteligencia Artificial",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/inteligencia-artificial-ux-optimiza-construccion-producto-digital.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/inteligencia-artificial-ux-optimiza-construccion-producto-digital/certificate"
     },
     {
         "curso": "Python para Data Science: primeros pasos",
         "fecha_finalizacion": "06/03/2025",
         "categoria": "Data Science",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/python-data-science-primeros-pasos.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/python-data-science-primeros-pasos/certificate"
     },
     {
         "curso": "Python para Data Science: trabajar con funciones, estructuras de datos y excepciones",
         "fecha_finalizacion": "12/03/2025",
         "categoria": "Data Science",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/python-data-science-trabajar-funciones-estructuras-datos-excepciones.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/python-data-science-trabajar-funciones-estructuras-datos-excepciones/certificate"
     },
     {
         "curso": "Análisis de datos con Python: usando ChatGPT como asistente",
         "fecha_finalizacion": "23/03/2025",
         "categoria": "Data Science",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/analisis-datos-python-usando-chatgpt-asistente.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/analisis-datos-python-usando-chatgpt-asistente/certificate"
     },
     {
         "curso": "GPT y Python: creando herramientas con API",
         "fecha_finalizacion": "23/04/2025",
         "categoria": "Inteligencia Artificial",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/gpt-python-creando-herramientas-api.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/gpt-python-creando-herramientas-api/certificate"
     },
     {
         "curso": "Consultas SQL: Avanzando en SQL con MySQL",
         "fecha_finalizacion": "21/05/2025",
         "categoria": "Bases de Datos",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/consultas-sql-mysql.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/consultas-sql-mysql/certificate"
     },
     {
         "curso": "Introducción a SQL con MySQL: Manipule y consulte datos",
         "fecha_finalizacion": "21/05/2025",
         "categoria": "Bases de Datos",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/introduccion-sql-mysql-manipule-consulte-datos.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/introduccion-sql-mysql-manipule-consulte-datos/certificate"
     },
     {
         "curso": "Oracle Cloud Infrastructure: implementación de una aplicación en la nube",
         "fecha_finalizacion": "21/05/2025",
         "categoria": "Cloud Computing",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/oracle-cloud-infrastructure-implementacion-aplicacion-nube.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/oracle-cloud-infrastructure-implementacion-aplicacion-nube/certificate"
     },
     {
         "curso": "Administración de MySQL: Seguridad y optimización de la base de datos - Parte 1",
         "fecha_finalizacion": "23/05/2025",
         "categoria": "Bases de Datos",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/mysql-seguridad-optmizacion-base-datos-parte1.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/mysql-seguridad-optmizacion-base-datos-parte1/certificate"
     },
     {
         "curso": "Administración de MySQL: Seguridad y optimización de la base de datos - Parte 2",
         "fecha_finalizacion": "23/05/2025",
         "categoria": "Bases de Datos",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/mysql-seguridad-optmizacion-base-datos-parte2.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/mysql-seguridad-optmizacion-base-datos-parte2/certificate"
     },
     {
         "curso": "Comandos DML: Manipulación de datos con MySQL",
         "fecha_finalizacion": "23/05/2025",
         "categoria": "Bases de Datos",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/comandos-dml-manipulacion-datos-mysql.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/comandos-dml-manipulacion-datos-mysql/certificate"
     },
     {
         "curso": "Oracle Cloud Infrastructure: base de datos e infraestructura como código",
         "fecha_finalizacion": "23/05/2025",
         "categoria": "Cloud Computing",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/oracle-cloud-infrastructure-base-datos-infraestructura-codigo.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/oracle-cloud-infrastructure-base-datos-infraestructura-codigo/certificate"
     },
     {
         "curso": "Procedures SQL: Ejecutando código en MySQL",
         "fecha_finalizacion": "23/05/2025",
         "categoria": "Bases de Datos",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/procedures-sql-codigo-mysql.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/procedures-sql-codigo-mysql/certificate"
     },
     {
         "curso": "SQL con MySQL: Proyecto final",
         "fecha_finalizacion": "23/05/2025",
         "categoria": "Bases de Datos",
-        "icono": "https://tuservidor.com/icono-curso",
-        "certificado": "https://tuservidor.com/certificados/comandos-dml.pdf"
+        "icono": "https://www.aluracursos.com/assets/api/cursos/sql-mysql-proyecto-final.svg",
+        "certificado": "https://app.aluracursos.com/user/luis-contla/course/sql-mysql-proyecto-final/certificate"
     }
 ]

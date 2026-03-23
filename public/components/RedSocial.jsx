@@ -7,9 +7,11 @@ const RedSocial = (props) => {
 
     return (
         <>
-            <div className="redes-elemento">
-                <img className="redes-elemento-icono" src={src} alt={red} />
-            </div>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+                <div className="redes-elemento">
+                    <img className="redes-elemento-icono" src={src} alt={red} />
+                </div>
+            </a>
         </>
     )
 }
