@@ -1,6 +1,7 @@
 import FeelingProud from "../../src/assets/containers/FeelingProud";
 import RedSocial from "../components/RedSocial";
 import { chosenTheme } from "../styles/theme";
+import { Link } from "react-router-dom";
 
 function Greeting() {
 
@@ -10,10 +11,14 @@ function Greeting() {
                 <div className="nombre-titulo">
                     <div className="nombre-nombre">¡Hola! Soy Luis Contla</div>
                     <br />
-                    <div className="nombre-texto">Ingeniero en Sistemas Computacionales enfocado en el Desarrollo Web que siempre se esfuerza por trabajar en productos integrales que desarrollan sistemas sociales y técnicos sostenibles y escalables para generar un impacto.</div>
+                    <div className="nombre-texto">Ingeniero en Sistemas enfocado en Desarrollo Web Full Stack. Construyo aplicaciones modernas, escalables y con buena experiencia de usuario.</div>
                     <div className="redes">
                         <RedSocial red="LinkedIn" link="https://www.linkedin.com/in/luiscontla/" />
                         <RedSocial red="GitHub" link="https://github.com/LuisContla"/>
+                    </div>
+                    <div className="greeting-cta">
+                        <Link to="/projects" className="greeting-cta-boton">Ver mis proyectos</Link>
+                        <Link to="/contact" className="greeting-cta-boton greeting-cta-boton--secundario">Contáctame</Link>
                     </div>
                 </div>
                 <div className="nombre-imagen">

@@ -1,26 +1,40 @@
-import { Link } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
 
 const ProyectCard = (props) => {
 
-    const { img, titulo, texto, fecha, git, web } = props;
+    const { img, titulo, texto, fecha, git, web, tecnologias } = props;
+    const [expandido, setExpandido] = useState(false);
+    const [cortado, setCortado] = useState(false);
+    const textoRef = useRef(null);
+
+    useEffect(() => {
+        const el = textoRef.current;
+        if (el) setCortado(el.scrollHeight > el.clientHeight);
+    }, []);
 
     return (
         <>
             <div className="proyectos-elemento" data-aos="flip-right">
                 <div className="proyectos-elemento-showcase">
-                    <img src={img} alt="" className="protectos-elemento-showcase-imagen" />
+                    <img src={img} alt={titulo} className="protectos-elemento-showcase-imagen" />
+                    <div className="proyectos-elemento-fecha">{fecha}</div>
                 </div>
                 <div className="proyectos-elemento-detalles">
-                    <div className="proyectos-elemento-nombre">{titulo} - {fecha}</div>
-                    <div className="proyectos-elemento-texto">{texto}</div>
+                    <div className="proyectos-elemento-nombre">{titulo}</div>
+                    <div ref={textoRef} className={`proyectos-elemento-texto${expandido ? " expandido" : ""}`}>{texto}</div>
+                    {(cortado || expandido) && (
+                        <button className="proyectos-elemento-ver-mas" onClick={() => setExpandido(!expandido)}>
+                            {expandido ? "Ver menos" : "Ver más"}
+                        </button>
+                    )}
                     <div className="proyectos-elemento-tecnologias">
-                        <div className="proyectos-elemento-tecnologias-boton">HTML</div>
-                        <div className="proyectos-elemento-tecnologias-boton">CSS</div>
-                        <div className="proyectos-elemento-tecnologias-boton">JavaScript</div>
+                        {tecnologias && tecnologias.map((tec, i) => (
+                            <div className="proyectos-elemento-tecnologias-boton" key={i}>{tec}</div>
+                        ))}
                     </div>
                     <div className="proyectos-elemento-links">
-                        <Link className="proyectos-elemento-links-boton" to={git} target="_blank" rel="noopener noreferrer">GitHub</Link>
-                        <Link className="proyectos-elemento-links-boton" to={web} target="_blank" rel="noopener noreferrer">Demo</Link>
+                        {git && <a className="proyectos-elemento-links-boton" href={git} target="_blank" rel="noopener noreferrer">GitHub</a>}
+                        {web && <a className="proyectos-elemento-links-boton" href={web} target="_blank" rel="noopener noreferrer">Demo</a>}
                     </div>
                 </div>
             </div>

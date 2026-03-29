@@ -14,6 +14,7 @@ import Proyects from "../public/pages/Proyects";
 import Resume from "../public/pages/Resume";
 import ContactMe from "../public/pages/ContactMe";
 import AluraCertifications from "../public/pages/AluraCertifications";
+import SantanderCertifications from "../public/pages/SantanderCertifications";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<ContactMe />} />
         <Route path="/alura" element={<AluraCertifications />} />
+        <Route path="/santander" element={<SantanderCertifications />} />
       </Routes>
       <Footer />
     </>

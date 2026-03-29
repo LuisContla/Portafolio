@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
+/* -------------------- VARIABLES & RESET ----------------------- */
+
 :root {
     --oscuro: #070908;
     --contraste: #6A8E7F;
@@ -13,6 +15,11 @@
 * {
     margin: 0rem;
     font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+img, svg {
+    max-width: 100%;
 }
 
 body {
@@ -60,19 +67,6 @@ nav {
     display: none;
 }
 
-/* --------------------  ----------------------- */
-
-.seccion {
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.seccion-titulo {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
 /* -------------------- SALUDO ----------------------- */
 
 .nombre {
@@ -93,6 +87,11 @@ nav {
     font-weight: bold;
 }
 
+.nombre-texto {
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
 .nombre-imagen {
     width: 45%;
 }
@@ -100,11 +99,6 @@ nav {
 .nombre-imagen-imagen {
     width: 100%;
     height: auto;
-}
-
-.nombre-texto {
-    font-size: 2rem;
-    padding-right: 1rem;
 }
 
 /* -------------------- REDES SOCIALES ----------------------- */
@@ -166,16 +160,22 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+.whatido-section:hover {
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.15));
+}
+
 .whatido-odd {
     flex-direction: row-reverse;
 }
 
 .whatido-section-image {
     width: 45%;
+    overflow: hidden;
 }
 
-.whatido-imagen-imagen {
-    width: 100%;
+.whatido-section-image svg {
+    display: block;
+    max-width: 100%;
     height: auto;
 }
 
@@ -197,12 +197,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-.technologie-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .whatido-section-text-technologies-icon {
     max-width: 3.5rem;
     height: 3rem;
@@ -214,7 +208,13 @@ nav {
     margin-top: 1rem;
 }
 
-/* -------------------- EDUCACION ----------------------- */
+.technologie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------- EDUCACIÓN ----------------------- */
 
 .education,
 .certifications {
@@ -223,6 +223,120 @@ nav {
     text-align: center;
     align-items: center;
     padding: 2rem;
+}
+
+.education-divider {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 2px solid var(--verdeContraste);
+    opacity: 0.3;
+}
+
+/* Timeline */
+
+.timeline {
+    width: 80%;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 2.5rem;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--verdeContraste);
+    opacity: 0.4;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.timeline-marker {
+    flex-shrink: 0;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--claro);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.timeline-marker-img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    flex: 1;
+    background-color: var(--claro);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.25rem;
+    text-align: left;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--verdeContraste);
+    margin: -1.25rem -1.25rem 1rem -1.25rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: var(--claroVerde);
+    font-weight: bold;
+}
+
+.timeline-nombre {
+    font-size: 1.25rem;
+}
+
+.timeline-grado {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+.timeline-fecha {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.timeline-summary {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Badge certificaciones */
+
+.certifications-element-image {
+    position: relative;
+}
+
+.certifications-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: var(--verdeFuerte);
+    color: var(--claro);
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.25rem 0.6rem;
+    border-radius: 1rem;
 }
 
 .education-title {
@@ -342,7 +456,7 @@ nav {
 
 .certifications-element-image-image {
     border-radius: 0.5rem 0.5rem 0rem 0rem;
-    width: 100%
+    width: 100%;
 }
 
 .certifications-element-content {
@@ -368,12 +482,36 @@ nav {
 
 /* -------------------- PROYECTOS ----------------------- */
 
+.proyectos-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.proyectos-grupo {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.proyectos-categoria-titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--verdeContraste);
+    text-align: left;
+    width: 100%;
+    margin: 1.5rem 0 0.5rem 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--verdeContraste);
+}
+
 .proyectos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
-    width: 90%;
+    width: 100%;
 }
 
 .proyectos-elemento {
@@ -386,11 +524,37 @@ nav {
 }
 
 .proyectos-elemento:hover {
-    scale: 0.95;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 12px 28px;
+    transform: translateY(-4px);
+}
+
+
+.proyectos-elemento-showcase {
+    position: relative;
+    overflow: hidden;
 }
 
 .protectos-elemento-showcase-imagen {
     width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.proyectos-elemento:hover .protectos-elemento-showcase-imagen {
+    transform: scale(1.05);
+}
+
+
+.proyectos-elemento-fecha {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    background-color: var(--verdeFuerte);
+    color: var(--claro);
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
 }
 
 .proyectos-elemento-detalles {
@@ -400,6 +564,34 @@ nav {
 .proyectos-elemento-nombre {
     font-weight: bold;
     font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.proyectos-elemento-texto {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.proyectos-elemento-texto.expandido {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    overflow: visible;
+}
+
+.proyectos-elemento-ver-mas {
+    background: none;
+    border: none;
+    color: var(--verdeFuerte);
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    margin-bottom: 0.25rem;
 }
 
 .proyectos-elemento-tecnologias {
@@ -620,36 +812,69 @@ nav {
     transition: 0.3s;
 }
 
+/* -------------------- STATS ----------------------- */
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--verdeContraste);
+    padding: 2rem 4rem;
+}
+
+.stats-elemento {
+    text-align: center;
+    color: var(--claro);
+}
+
+.stats-numero {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.stats-label {
+    font-size: 1rem;
+}
+
+/* -------------------- GREETING CTA ----------------------- */
+
+.greeting-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.greeting-cta-boton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background-color: var(--verdeContraste);
+    color: var(--claro);
+    transition: 0.3s;
+}
+
+.greeting-cta-boton:hover {
+    background-color: var(--verdeFuerte);
+}
+
+.greeting-cta-boton--secundario {
+    background-color: transparent;
+    border: 2px solid var(--verdeContraste);
+    color: var(--verdeContraste);
+}
+
+.greeting-cta-boton--secundario:hover {
+    background-color: var(--verdeContraste);
+    color: var(--claro);
+}
 
 /* -------------------- RESPONSIVIDAD ----------------------- */
 
 @media (max-width: 970px) {
 
-
-    /* -------------------- EDUCACION ----------------------- */
-
-    .education-element {
-        width: 90%;
-    }
-
-    .education-element-image {
-        width: 30%;
-    }
-
-    .education-element-content {
-        width: 70%;
-    }
-
-    .certifications-element {
-        width: 45%;
-    }
-
-    .grid-item {
-        flex: 1 1 calc(50% - 1rem);
-        max-width: calc(50% - 1rem);
-    }
-
-    /* -------------------- NAVEGACIÓN ----------------------- */
+    /* NAVEGACIÓN */
 
     nav {
         padding: 1rem 1.5rem;
@@ -693,7 +918,25 @@ nav {
         text-align: center;
     }
 
-    /* -------------------- PROYECTOS ----------------------- */
+    /* EDUCACIÓN */
+
+    .education-element {
+        width: 90%;
+    }
+
+    .education-element-image {
+        width: 30%;
+    }
+
+    .education-element-content {
+        width: 70%;
+    }
+
+    .certifications-element {
+        width: 45%;
+    }
+
+    /* PROYECTOS */
 
     .proyectos-elemento {
         flex: 1 1 calc(50% - 1rem);
@@ -704,16 +947,7 @@ nav {
 
 @media (max-width: 450px) {
 
-    .social-media-div {
-        text-align: center;
-    }
-
-    .grid-item {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    /* -------------------- SALUDO ----------------------- */
+    /* SALUDO */
 
     .nombre {
         flex-direction: column;
@@ -728,13 +962,13 @@ nav {
         width: 100%;
     }
 
-    /* -------------------- REDES SOCIALES ----------------------- */
+    /* REDES SOCIALES */
 
     .redes {
         justify-content: center;
     }
 
-    /* -------------------- LO QUE HAGO ----------------------- */
+    /* LO QUE HAGO */
 
     .whatido-section {
         flex-direction: column-reverse;
@@ -753,7 +987,7 @@ nav {
         align-items: self-start;
     }
 
-    /* -------------------- EDUCACION ----------------------- */
+    /* EDUCACIÓN */
 
     .education-element {
         flex-direction: column;
@@ -772,7 +1006,31 @@ nav {
         width: 100%;
     }
 
-    /* -------------------- PROYECTOS ----------------------- */
+    /* TIMELINE */
+
+    .timeline {
+        width: 95%;
+    }
+
+    .timeline::before {
+        left: 1.75rem;
+    }
+
+    .timeline-marker {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .timeline-fecha {
+        align-self: flex-start;
+    }
+
+    /* PROYECTOS */
 
     .proyectos-elemento {
         flex: 1 1 calc(100% - 1rem);
@@ -780,10 +1038,28 @@ nav {
         margin-bottom: 1rem;
     }
 
-    /* -------------------- CURRÍCULUM ----------------------- */
+    /* CURRÍCULUM */
 
     .resume-preview {
         width: 90%;
+    }
+
+    /* STATS */
+
+    .stats {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .stats-elemento {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    /* GREETING CTA */
+
+    .greeting-cta {
+        justify-content: center;
     }
 
 }
