@@ -88,7 +88,7 @@ nav {
 }
 
 .nombre-texto {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-right: 1rem;
 }
 
@@ -681,6 +681,10 @@ nav {
     border: 2px solid var(--verdeContraste);
 }
 
+.resume-action-link-text--mobile {
+    display: none;
+}
+
 .resume-preview {
     width: 70%;
 }
@@ -1181,8 +1185,12 @@ nav {
 }
 
 .greeting-cta-boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
+    line-height: 1.2;
     font-weight: bold;
     text-decoration: none;
     border-radius: 0.5rem;
@@ -1312,6 +1320,7 @@ nav {
 
     .nombre-imagen {
         width: 100%;
+        margin-top: 1.25rem;
     }
 
     /* REDES SOCIALES */
@@ -1325,18 +1334,47 @@ nav {
     .whatido-section {
         flex-direction: column-reverse;
         width: 100%;
+        align-items: center;
     }
 
     .whatido-section-image {
         width: 100%;
+        margin-top: 0.75rem;
     }
 
     .whatido-section-text {
+        width: 100%;
         margin-bottom: 1.5rem;
+        text-align: center;
     }
 
     .whatido-section-text-summary {
-        align-items: self-start;
+        font-size: 1.15rem;
+        line-height: 1.55;
+        text-align: center;
+    }
+
+    .whatido-section-text-summary ul {
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 1.35rem;
+    }
+
+    .whatido-section-text-summary li {
+        margin-bottom: 0.45rem;
+        line-height: 1.55;
+    }
+
+    .whatido-section-text-technologies {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 0.8rem;
+    }
+
+    .whatido-section-text-technologies .technologie-info {
+        flex: 0 0 calc(33.333% - 0.7rem);
+        max-width: calc(33.333% - 0.7rem);
     }
 
     /* EDUCACIÓN */
@@ -1374,6 +1412,20 @@ nav {
         padding: 1.5rem;
     }
 
+    .contacto {
+        padding: 1rem 0.5rem;
+    }
+
+    .contacto-paneles {
+        gap: 0.8rem;
+    }
+
+    .contacto-panel-informacion,
+    .contacto-formulario {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .timeline::before {
         left: 1.75rem;
     }
@@ -1405,11 +1457,30 @@ nav {
     }
 
     .alura-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .alura-element {
         padding: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .alura-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+    }
+
+    .alura-name {
+        text-align: center;
+    }
+
+    .alura-buttons {
+        margin-top: 0.75rem;
+        justify-content: center;
     }
 
     /* CURRÍCULUM */
@@ -1419,8 +1490,31 @@ nav {
     }
 
     .resume-action-link {
+        width: auto;
+        max-width: none;
+        flex: 1 1 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem 0.7rem;
+    }
+
+    .resume-actions {
+        flex-wrap: nowrap;
+        gap: 0.6rem;
         width: 100%;
-        max-width: 24rem;
+    }
+
+    .resume-actions--bottom {
+        display: none;
+    }
+
+    .resume-action-link-text--desktop {
+        display: none;
+    }
+
+    .resume-action-link-text--mobile {
+        display: inline;
     }
 
     /* STATS */
