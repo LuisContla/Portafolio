@@ -17,7 +17,7 @@ const degrees = [
         grado: "Educación Básica",
         fecha: "2009 — 2018",
         link: "https://www.ecagrupoeducativo.mx/eca",
-        summary: "Formación en valores, disciplina y habilidades de aprendizaje que sentaron las bases de mi desarrollo personal y académico."
+        summary: "Durante mi formación básica desarrollé hábitos de disciplina, responsabilidad y trabajo constante, además de fortalecer habilidades de aprendizaje y colaboración que marcaron la base de mi crecimiento personal y académico."
     },
     {
         img: CECYT9,
@@ -25,7 +25,7 @@ const degrees = [
         grado: "Técnico en Programación",
         fecha: "2018 — 2021",
         link: "https://www.cecyt9.ipn.mx/",
-        summary: "Aquí comencé mi camino en la programación, adquiriendo los fundamentos de lógica, algoritmos y desarrollo de software como Técnico en Programación."
+        summary: "En esta etapa inicié formalmente mi camino en el desarrollo de software, construyendo bases sólidas en lógica de programación, algoritmos, estructuras de datos y buenas prácticas técnicas como Técnico en Programación."
     },
     {
         img: ESCOM,
@@ -33,7 +33,7 @@ const degrees = [
         grado: "Ingeniero en Sistemas Computacionales",
         fecha: "2021 — Actualidad",
         link: "https://www.escom.ipn.mx/",
-        summary: "Actualmente cursando Ingeniería en Sistemas Computacionales, donde profundizo en áreas como desarrollo de software, redes, inteligencia artificial y gestión de proyectos."
+        summary: "Actualmente curso Ingeniería en Sistemas Computacionales, profundizando en desarrollo de software, redes e inteligencia artificial, mientras participo en proyectos que fortalecen mis habilidades de análisis, diseño de soluciones y gestión técnica."
     },
 ];
 
@@ -83,7 +83,7 @@ function Education() {
                     <div className="education-title" data-aos="fade-up">Certificaciones</div>
                     <div className="certifications-container">
                         <Certifications img={ONE} curso="Oracle Next Education" institucion="Oracle" link="/alura" badge="51 cursos"/>
-                        <Certifications img={Santander} curso="Python" institucion="Santander Open Academy" link="/santander" badge="1 curso"/>
+                        <Certifications img={Santander} curso="Python" institucion="Santander Open Academy" link={null} badge="1 curso"/>
                     </div>
                 </div>
             </div>

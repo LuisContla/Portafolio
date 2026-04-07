@@ -16,7 +16,9 @@ const Certifications = (props) => {
                     <div className="certification-institution">{institucion}</div>
                 </div>
                 <div className="certifications-element-button">
-                    <Link className="education-button" to={link}>Ver Certificaciones</Link>
+                    {link && (
+                        <Link className="education-button" to={link}>Ver Certificaciones</Link>
+                    )}
                 </div>
             </div>
         </>
