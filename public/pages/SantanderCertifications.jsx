@@ -14,7 +14,7 @@ function SantanderCertifications() {
                         <div className="nombre-texto">Participé en Santander Open Academy, una plataforma de becas y formación gratuita impulsada por Santander. A continuación, se detallan las certificaciones de los cursos que completé en el marco de este programa:</div>
                     </div>
                     <div className="nombre-imagen">
-                        <img src={Santander} alt="Santander Open Academy" className="contacto-imagen-imagen" />
+                        <img src={Santander} alt="Santander Open Academy" className="certificaciones-portada-imagen" />
                     </div>
                 </div>
                 <div className="alura">
