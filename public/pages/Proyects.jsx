@@ -6,7 +6,7 @@ import Encriptador from "../images/Encriptador.png";
 import DaysOfCode from "../images/7DaysOfCode.png";
 import AluraGeek from "../images/AluraGeek.png";
 import AluraFlix from "../images/AluraFlix.png";
-import TrashGamez from "../images/FotoProyecto.jpg";
+import TrashGamez from "../images/Placeholder.png";
 import JuegoDeLaVida from "../images/JuegoDeLaVida.png";
 import Regla30 from "../images/Regla30.png";
 import Regla184 from "../images/Regla184.png";
@@ -19,11 +19,10 @@ const imagenes = {
     "7DaysOfCode.png": DaysOfCode,
     "AluraGeek.png": AluraGeek,
     "AluraFlix.png": AluraFlix,
-    "FotoProyecto.jpg": TrashGamez,
+    "Placeholder.png": TrashGamez,
     "JuegoDeLaVida.png": JuegoDeLaVida,
     "Regla30.png": Regla30,
     "Regla184.png": Regla184,
-    "Placeholder.png": Placeholder,
 };
 
 function Proyects() {
