@@ -10,6 +10,7 @@ import TrashGamez from "../images/FotoProyecto.jpg";
 import JuegoDeLaVida from "../images/JuegoDeLaVida.png";
 import Regla30 from "../images/Regla30.png";
 import Regla184 from "../images/Regla184.png";
+import Placeholder from "../images/Placeholder.png";
 
 import { chosenTheme } from "../styles/theme";
 
@@ -22,6 +23,7 @@ const imagenes = {
     "JuegoDeLaVida.png": JuegoDeLaVida,
     "Regla30.png": Regla30,
     "Regla184.png": Regla184,
+    "Placeholder.png": Placeholder,
 };
 
 function Proyects() {
