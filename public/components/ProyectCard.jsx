@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 
 const ProyectCard = (props) => {
 
-    const { img, titulo, texto, fecha, git, web, tecnologias } = props;
+    const { img, titulo, texto, fecha, git, web, demo, tecnologias } = props;
     const [expandido, setExpandido] = useState(false);
     const [cortado, setCortado] = useState(false);
     const textoRef = useRef(null);
@@ -34,7 +34,8 @@ const ProyectCard = (props) => {
                     </div>
                     <div className="proyectos-elemento-links">
                         {git && <a className="proyectos-elemento-links-boton" href={git} target="_blank" rel="noopener noreferrer">GitHub</a>}
-                        {web && <a className="proyectos-elemento-links-boton" href={web} target="_blank" rel="noopener noreferrer">Demo</a>}
+                        {demo && <a className="proyectos-elemento-links-boton" href={demo} target="_blank" rel="noopener noreferrer">Demo</a>}
+                        {web && <a className="proyectos-elemento-links-boton" href={web} target="_blank" rel="noopener noreferrer">Visitar</a>}
                     </div>
                 </div>
             </div>

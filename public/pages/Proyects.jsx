@@ -10,6 +10,7 @@ import TrashGamez from "../images/Placeholder.png";
 import JuegoDeLaVida from "../images/JuegoDeLaVida.png";
 import Regla30 from "../images/Regla30.png";
 import Regla184 from "../images/Regla184.png";
+import HormigaDeLangton from "../images/HormigaDeLangton.png";
 import Placeholder from "../images/Placeholder.png";
 
 import { chosenTheme } from "../styles/theme";
@@ -23,6 +24,7 @@ const imagenes = {
     "JuegoDeLaVida.png": JuegoDeLaVida,
     "Regla30.png": Regla30,
     "Regla184.png": Regla184,
+    "HormigaDeLangton.png": HormigaDeLangton,
 };
 
 function Proyects() {
@@ -42,29 +44,25 @@ function Proyects() {
                 </div>
                 <div className="proyectos-seccion">
                     <div className="education-title" data-aos="fade-up">Algunos de mis Proyectos</div>
-                    {["Formación", "Académico", "Personal"].map(categoria => {
-                        const grupo = proyectosJSON.filter(p => p.categoria === categoria);
-                        if (grupo.length === 0) return null;
-                        return (
-                            <div className="proyectos-grupo" key={categoria}>
-                                <div className="proyectos-categoria-titulo" data-aos="fade-up">{categoria}</div>
-                                <div className="proyectos">
-                                    {grupo.map(proyecto => (
-                                        <ProyectCard
-                                            key={proyecto.id}
-                                            img={imagenes[proyecto.imagen]}
-                                            titulo={proyecto.titulo}
-                                            texto={proyecto.texto}
-                                            fecha={proyecto.fecha}
-                                            git={proyecto.git}
-                                            web={proyecto.web}
-                                            tecnologias={proyecto.tecnologias}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        );
-                    })}
+                    <div className="proyectos-grupo">
+                        <div className="proyectos">
+                            {["Formación", "Académico", "Personal"]
+                                .flatMap(categoria => proyectosJSON.filter(p => p.categoria === categoria))
+                                .map(proyecto => (
+                                    <ProyectCard
+                                        key={proyecto.id}
+                                        img={imagenes[proyecto.imagen]}
+                                        titulo={proyecto.titulo}
+                                        texto={proyecto.texto}
+                                        fecha={proyecto.fecha}
+                                        git={proyecto.git}
+                                        web={proyecto.web}
+                                        demo={proyecto.demo}
+                                        tecnologias={proyecto.tecnologias}
+                                    />
+                                ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
