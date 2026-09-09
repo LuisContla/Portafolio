@@ -1,10 +1,10 @@
 import aluraJSON from "../documents/alura.json";
-
+import CertificationCard from "../components/CertificationCard";
 import ONE from "../images/ONE.png";
 
 function AluraCertifications() {
 
-    function handleDemo (demo){
+    function handleDemo(demo) {
         if (demo) {
             return (<a className="alura-button" href={demo} target="_blank" rel="noopener noreferrer">Ver Demo</a>);
         }
@@ -23,23 +23,10 @@ function AluraCertifications() {
                         <img src={ONE} alt="Oracle Next Education" className="certificaciones-portada-imagen certificaciones-portada-imagen--one" />
                     </div>
                 </div>
-                <div className="alura">
-                    <div className="alura-container">
+                <div className="certificationCard">
+                    <div className="certificationCard-container">
                         {aluraJSON.map(course => (
-                            <div className="alura-element" key={course.id}>
-                                <div className="alura-info">
-                                    <div className="alura-icon">
-                                        <img src={course.icono} alt="" className="alura-icon-image" />
-                                    </div>
-                                    <div className="alura-name">
-                                        <p>{course.curso}</p>
-                                    </div>
-                                </div>
-                                <div className="alura-buttons">
-                                    <a className="alura-button" href={course.certificado} target="_blank" rel="noopener noreferrer">Ver Certificado</a>
-                                    {handleDemo(course.demo)}
-                                </div>
-                            </div>
+                            <CertificationCard key={course.id} course={course} />
                         ))}
                     </div>
                 </div>

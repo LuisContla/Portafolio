@@ -11,6 +11,7 @@ const Certifications = (props) => {
                     <img src={img} alt={institucion} className="certifications-element-image-image" />
                     {badge && <div className="certifications-badge">{badge}</div>}
                 </div>
+                <br />
                 <div className="certifications-element-content">
                     <div className="certification-name">{curso}</div>
                     <div className="certification-institution">{institucion}</div>
@@ -20,6 +21,7 @@ const Certifications = (props) => {
                         <Link className="education-button" to={link}>Ver Certificaciones</Link>
                     )}
                 </div>
+                <br />
             </div>
         </>
     )

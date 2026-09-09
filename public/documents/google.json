@@ -1,0 +1,58 @@
+[
+    {
+        "curso": "AI Fundamentals",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    },
+    {
+        "curso": "AI for Brainstorming and Planning",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    },
+    {
+        "curso": "AI for Research and Insights",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    },
+    {
+        "curso": "AI for Writing and Communicating",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    },
+    {
+        "curso": "AI for Content Creation",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    },
+    {
+        "curso": "AI for Data Analysis",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    },
+    {
+        "curso": "AI for App Building",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    },
+    {
+        "curso": "AI for App Deployment",
+        "fecha_finalizacion": "",
+        "categoria": "Inteligencia Artificial",
+        "icono": "../images/coursera.png",
+        "certificado": ""
+    }
+]

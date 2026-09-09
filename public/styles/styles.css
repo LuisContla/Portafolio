@@ -18,7 +18,8 @@
     box-sizing: border-box;
 }
 
-img, svg {
+img,
+svg {
     max-width: 100%;
 }
 
@@ -161,7 +162,7 @@ nav {
 }
 
 .whatido-section:hover {
-    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.15));
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
 }
 
 .whatido-odd {
@@ -449,14 +450,20 @@ nav {
 
 .certifications-element-image {
     display: flex;
-    justify-content: space-between;
-    color: var(--claroVerde);
-    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .certifications-element-image-image {
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
 }
 
 .certifications-element-content {
@@ -493,17 +500,6 @@ nav {
 .proyectos-grupo {
     width: 90%;
     margin-bottom: 1rem;
-}
-
-.proyectos-categoria-titulo {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--verdeContraste);
-    text-align: left;
-    width: 100%;
-    margin: 1.5rem 0 0.5rem 0;
-    padding-bottom: 0.25rem;
-    border-bottom: 2px solid var(--verdeContraste);
 }
 
 .proyectos {
@@ -851,9 +847,11 @@ nav {
     0% {
         box-shadow: 0 0 0 0 rgba(44, 156, 75, 0.45);
     }
+
     70% {
         box-shadow: 0 0 0 8px rgba(44, 156, 75, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(44, 156, 75, 0);
     }
@@ -989,22 +987,6 @@ nav {
     font-weight: bold;
 }
 
-.contacto-confianza {
-    margin-top: 0.8rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.4rem;
-}
-
-.contacto-confianza-item {
-    font-size: 0.87rem;
-    color: #2d5340;
-    background-color: #eff7f2;
-    border: 1px solid #cfe2d5;
-    border-radius: 0.45rem;
-    padding: 0.45rem 0.55rem;
-}
-
 .contacto-formulario-feedback {
     margin: 0.75rem 0.25rem 0.25rem 0.25rem;
     font-weight: bold;
@@ -1049,9 +1031,9 @@ nav {
     padding: 1rem;
 }
 
-/* -------------------- ALURA CERTIFICACIONES ----------------------- */
+/* -------------------- CERTIFICACIONES ----------------------- */
 
-.alura {
+.certificationCard {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1059,7 +1041,18 @@ nav {
     padding: 2rem;
 }
 
-.alura-container {
+.certificationCard-path {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--verdeContraste);
+    text-align: left;
+    width: min(100%, 72rem);
+    margin: 1.5rem 0 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--verdeContraste);
+}
+
+.certificationCard-container {
     width: min(100%, 72rem);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
@@ -1067,7 +1060,7 @@ nav {
     align-items: stretch;
 }
 
-.alura-element {
+.certificationCard-element {
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -1079,20 +1072,20 @@ nav {
     transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
-.alura-element:hover {
+.certificationCard-element:hover {
     transform: translateY(-4px);
     border-color: #9fc1ad;
     box-shadow: rgba(24, 52, 35, 0.16) 0 14px 28px;
 }
 
-.alura-info {
+.certificationCard-info {
     display: flex;
     align-items: flex-start;
     gap: 0.8rem;
     flex: 1;
 }
 
-.alura-icon {
+.certificationCard-icon {
     width: 3.2rem;
     height: 3.2rem;
     min-width: 3.2rem;
@@ -1104,18 +1097,26 @@ nav {
     padding: 0.4rem;
 }
 
-.alura-icon-image {
+.certificationCard-icon-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.alura-name {
+.certificationCard-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.certificationCard-name {
     width: 100%;
     text-align: left;
 }
 
-.alura-name p {
+.certificationCard-name p {
     margin: 0;
     font-size: 1rem;
     font-weight: bold;
@@ -1123,7 +1124,21 @@ nav {
     line-height: 1.35;
 }
 
-.alura-buttons {
+.certificationCard-category {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--verdeFuerte);
+    background-color: #d8e9de;
+    padding: 0.25rem 0.6rem;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.certificationCard-category p {
+    margin: 0;
+}
+
+.certificationCard-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1131,7 +1146,7 @@ nav {
     margin-top: 1rem;
 }
 
-.alura-button {
+.certificationCard-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1147,7 +1162,7 @@ nav {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.alura-button:hover {
+.certificationCard-button:hover {
     background-color: var(--verdeContraste);
     transform: translateY(-1px);
 }
@@ -1287,7 +1302,7 @@ nav {
         max-width: calc(50% - 1rem);
     }
 
-    .alura-container {
+    .certificationCard-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1452,33 +1467,33 @@ nav {
         margin-bottom: 1rem;
     }
 
-    .alura {
+    .certificationCard {
         padding: 1.5rem 1rem;
     }
 
-    .alura-container {
+    .certificationCard-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .alura-element {
+    .certificationCard-element {
         padding: 0.9rem;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    .alura-info {
+    .certificationCard-info {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         flex: 0 0 auto;
     }
 
-    .alura-name {
+    .certificationCard-name {
         text-align: center;
     }
 
-    .alura-buttons {
+    .certificationCard-buttons {
         margin-top: 0.75rem;
         justify-content: center;
     }

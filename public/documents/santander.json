@@ -1,9 +1,16 @@
 [
     {
         "curso": "Python",
-        "fecha_finalizacion": "",
+        "fecha_finalizacion": "Julio 2025",
         "categoria": "Programación",
-        "icono": "",
-        "certificado": ""
+        "icono": "../images/SanOpenAca.png",
+        "certificado": "../documents/Python_Santander.pdf"
+    },
+    {
+        "curso": "Fundamentos de ciberseguridad",
+        "fecha_finalizacion": "Agosto 2026",
+        "categoria": "Ciberseguridad",
+        "icono": "../images/SanOpenAca.png",
+        "certificado": "../documents/CiberSec_Santander.pdf"
     }
 ]

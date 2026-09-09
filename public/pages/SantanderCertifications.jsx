@@ -1,5 +1,5 @@
 import santanderJSON from "../documents/santander.json";
-
+import CertificationCard from "../components/CertificationCard";
 import Santander from "../images/Santander.png";
 
 function SantanderCertifications() {
@@ -11,32 +11,16 @@ function SantanderCertifications() {
                     <div className="nombre-titulo">
                         <div className="nombre-nombre">Santander Open Academy</div>
                         <br />
-                        <div className="nombre-texto">Participé en Santander Open Academy, una plataforma de becas y formación gratuita impulsada por Santander. A continuación, se detallan las certificaciones de los cursos que completé en el marco de este programa:</div>
+                        <div className="nombre-texto">He participado en algunos cursos de Santander Open Academy, una plataforma de becas y formación gratuita impulsada por Santander. A continuación, se detallan las certificaciones de los cursos que completé en el marco de este programa:</div>
                     </div>
                     <div className="nombre-imagen">
                         <img src={Santander} alt="Santander Open Academy" className="certificaciones-portada-imagen" />
                     </div>
                 </div>
-                <div className="alura">
-                    <div className="alura-container">
+                <div className="certificationCard">
+                    <div className="certificationCard-container">
                         {santanderJSON.map((course, index) => (
-                            <div className="alura-element" key={index}>
-                                <div className="alura-info">
-                                    {course.icono && (
-                                        <div className="alura-icon">
-                                            <img src={course.icono} alt="" className="alura-icon-image" />
-                                        </div>
-                                    )}
-                                    <div className="alura-name">
-                                        <p>{course.curso}</p>
-                                    </div>
-                                </div>
-                                <div className="alura-buttons">
-                                    {course.certificado && (
-                                        <a className="alura-button" href={course.certificado} target="_blank" rel="noopener noreferrer">Ver Certificado</a>
-                                    )}
-                                </div>
-                            </div>
+                            <CertificationCard key={index} course={course} />
                         ))}
                     </div>
                 </div>

@@ -7,6 +7,7 @@ import EducationImg from "../../src/assets/containers/EducationImg";
 
 import ONE from "../images/ONE.png";
 import Santander from "../images/Santander.png";
+import Google from "../images/Google.png";
 
 import { chosenTheme } from "../styles/theme";
 
@@ -82,8 +83,9 @@ function Education() {
                 <div className="certifications">
                     <div className="education-title" data-aos="fade-up">Certificaciones</div>
                     <div className="certifications-container">
-                        <Certifications img={ONE} curso="Oracle Next Education" institucion="Oracle" link="/alura" badge="51 cursos"/>
-                        <Certifications img={Santander} curso="Python" institucion="Santander Open Academy" link={null} badge="1 curso"/>
+                        <Certifications img={ONE} curso="Oracle Next Education" institucion="Oracle" link="/alura" badge="51 cursos" />
+                        <Certifications img={Santander} curso="Santander Open Academy" institucion="Santander" link="/santander" badge="2 cursos" />
+                        {/* <Certifications img={Google} curso="Certificaciones Google" institucion="Google" link="/google" badge="8 cursos" /> */}
                     </div>
                 </div>
             </div>
