@@ -10,7 +10,7 @@ function CertificationCard({ course }) {
             <div className="certificationCard-info">
                 {course.icono && (
                     <div className="certificationCard-icon">
-                        <img src={course.icono} alt="" className="certificationCard-icon-image" />
+                        <img src={course.icono} alt="" className="certificationCard-icon-image" loading="lazy" decoding="async" />
                     </div>
                 )}
                 <div className="certificationCard-text">

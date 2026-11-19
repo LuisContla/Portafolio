@@ -54,7 +54,7 @@ function Education() {
                         {degrees.map((d, i) => (
                             <div className="timeline-item" key={i} data-aos="fade-up">
                                 <div className="timeline-marker">
-                                    <img src={d.img} alt={d.nombre} className="timeline-marker-img" />
+                                    <img src={d.img} alt={d.nombre} className="timeline-marker-img" loading="lazy" decoding="async" />
                                 </div>
                                 <div className="timeline-content">
                                     <div className="timeline-header">

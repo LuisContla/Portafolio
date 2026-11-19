@@ -6,7 +6,7 @@ const Technologie = (props) => {
     return (
         <>
             <div className="technologie-info">
-                <img className="whatido-section-text-technologies-icon" src={src} alt={txt} />
+                <img className="whatido-section-text-technologies-icon" src={src} alt={txt} loading="lazy" decoding="async" />
                 <p>{txt}</p>
             </div>
 

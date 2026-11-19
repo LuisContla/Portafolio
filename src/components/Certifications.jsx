@@ -8,7 +8,7 @@ const Certifications = (props) => {
         <>
             <div className="certifications-element" data-aos="zoom-in">
                 <div className="certifications-element-image">
-                    <img src={img} alt={institucion} className="certifications-element-image-image" />
+                    <img src={img} alt={institucion} className="certifications-element-image-image" loading="lazy" decoding="async" />
                     {badge && <div className="certifications-badge">{badge}</div>}
                 </div>
                 <br />

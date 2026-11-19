@@ -7,7 +7,7 @@ const RedSocial = (props) => {
         <>
             <a href={link} target="_blank" rel="noopener noreferrer">
                 <div className="redes-elemento">
-                    <img className="redes-elemento-icono" src={src} alt={red} />
+                    <img className="redes-elemento-icono" src={src} alt={red} loading="lazy" decoding="async" />
                 </div>
             </a>
         </>

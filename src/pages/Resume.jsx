@@ -18,7 +18,7 @@ function Resume() {
                         </a>
                     </div>
                     <div className="resume-preview" data-aos="flip-right">
-                        <img src={PNGFile} alt="Currículum Luis Contla" className="resume-preview-image"/>
+                        <img src={PNGFile} alt="Currículum Luis Contla" className="resume-preview-image" loading="lazy" decoding="async" />
                     </div>
                     <div className="resume-actions resume-actions--bottom" data-aos="zoom-out">
                         <a href={PDFFile} className="resume-action-link" download>Descargar Currículum</a>

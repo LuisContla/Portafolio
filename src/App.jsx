@@ -1,22 +1,22 @@
 import "./styles/styles.css";
 import { Routes, Route, useLocation } from 'react-router-dom';
 
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
-import Home from "./pages/Home";
-import Education from "./pages/Education";
-import Proyects from "./pages/Proyects";
-import Resume from "./pages/Resume";
-import ContactMe from "./pages/ContactMe";
-import AluraCertifications from "./pages/AluraCertifications";
-import SantanderCertifications from "./pages/SantanderCertifications";
-import GoogleCertifications from "./pages/GoogleCertifications";
-import NotFound from "./pages/NotFound";
+const Home = lazy(() => import("./pages/Home"));
+const Education = lazy(() => import("./pages/Education"));
+const Proyects = lazy(() => import("./pages/Proyects"));
+const Resume = lazy(() => import("./pages/Resume"));
+const ContactMe = lazy(() => import("./pages/ContactMe"));
+const AluraCertifications = lazy(() => import("./pages/AluraCertifications"));
+const SantanderCertifications = lazy(() => import("./pages/SantanderCertifications"));
+const GoogleCertifications = lazy(() => import("./pages/GoogleCertifications"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   const { pathname } = useLocation();
@@ -36,17 +36,19 @@ function App() {
   return (
     <>
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/projects" element={<Proyects />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<ContactMe />} />
-        <Route path="/alura" element={<AluraCertifications />} />
-        <Route path="/santander" element={<SantanderCertifications />} />
-        <Route path="/google" element={<GoogleCertifications />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Suspense fallback={<div className="contenedor-principal" style={{ minHeight: "70vh" }} />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<Proyects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<ContactMe />} />
+          <Route path="/alura" element={<AluraCertifications />} />
+          <Route path="/santander" element={<SantanderCertifications />} />
+          <Route path="/google" element={<GoogleCertifications />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </>
   );
