@@ -1,5 +1,3 @@
-import React from 'react';
-
 function CertificationCard({ course }) {
     function handleDemo(demo) {
         if (demo) {
@@ -22,6 +20,11 @@ function CertificationCard({ course }) {
                     {course.categoria && (
                         <div className="certificationCard-category">
                             <p>{course.categoria}</p>
+                        </div>
+                    )}
+                    {course.fecha_finalizacion && (
+                        <div className="certificationCard-date">
+                            <span>{course.fecha_finalizacion}</span>
                         </div>
                     )}
                 </div>

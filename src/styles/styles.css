@@ -44,6 +44,11 @@ nav {
     color: var(--claro);
 }
 
+.nav-logo-link {
+    color: inherit;
+    text-decoration: none;
+}
+
 .nav-buttons {
     width: 65%;
     display: flex;
@@ -57,15 +62,20 @@ nav {
     color: var(--claro);
     text-decoration: none;
     padding: 0.75rem 1.25rem;
+    border-radius: 0.35rem;
     transition: 0.3s;
 }
 
-.nav-element:hover {
+.nav-element:hover,
+.nav-element.active {
     background-color: #6A8E7F;
 }
 
 .hamburger-button {
     display: none;
+    background: none;
+    border: none;
+    padding: 0.25rem;
 }
 
 /* -------------------- SALUDO ----------------------- */
@@ -346,73 +356,6 @@ nav {
     font-weight: bold;
     text-align: center;
     margin-bottom: 2rem;
-}
-
-.education-element {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 1rem 0rem 1rem 0rem;
-    align-items: center;
-}
-
-.education-element-image {
-    width: 20%;
-    border-radius: 50%;
-}
-
-.education-element-image-image {
-    padding: 0.5rem;
-    width: 80%;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: var(--claro);
-}
-
-.education-element-content {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 0.5rem;
-}
-
-.education-element-content-header {
-    background-color: var(--verdeContraste);
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    color: var(--claroVerde);
-    font-weight: bold;
-}
-
-.education-school-degree {
-    width: 80%;
-    justify-content: center;
-    text-align: left;
-}
-
-.school-name {
-    font-size: 1.75rem;
-}
-
-.school-degree {
-    font-size: 1.15rem;
-}
-
-.education-school-time {
-    width: 20%;
-    align-content: center;
-}
-
-.education-element-content-details {
-    padding: 1rem;
-    text-align: left;
-    font-size: 1.15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 
 .education-button {
@@ -1138,6 +1081,110 @@ nav {
     margin: 0;
 }
 
+.certificationCard-date {
+    font-size: 0.78rem;
+    color: #577060;
+    font-weight: bold;
+}
+
+/* -------------------- FILTROS Y BUSCADOR ----------------------- */
+
+.filtros-barra {
+    width: min(100%, 72rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.buscador-input {
+    width: min(100%, 28rem);
+    height: 2.6rem;
+    padding: 0.55rem 1rem;
+    border: 1px solid #b9ccbf;
+    border-radius: 999px;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    color: #1f3f2e;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buscador-input:focus {
+    outline: none;
+    border-color: var(--verdeContraste);
+    box-shadow: 0 0 0 3px rgba(48, 105, 67, 0.18);
+}
+
+.filtros-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.filtros-barra .filtros-contenedor {
+    margin-bottom: 0;
+}
+
+.filtro-boton {
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--verdeContraste);
+    background-color: #edf6f0;
+    color: var(--verdeContraste);
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.filtro-boton:hover {
+    background-color: #d8e9de;
+    transform: translateY(-1px);
+}
+
+.filtro-boton--activo {
+    background-color: var(--verdeContraste);
+    color: var(--claro);
+}
+
+.filtro-boton--activo:hover {
+    background-color: var(--verdeFuerte);
+}
+
+/* -------------------- PÁGINA 404 ----------------------- */
+
+.not-found {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+}
+
+.not-found-codigo {
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--verdeContraste);
+    line-height: 1;
+}
+
+.not-found-titulo {
+    font-size: 2rem;
+    color: #1f3f2e;
+}
+
+.not-found-texto {
+    font-size: 1.15rem;
+    color: #355543;
+    margin-bottom: 0.5rem;
+}
+
 .certificationCard-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -1265,6 +1312,7 @@ nav {
     }
 
     .bar {
+        display: block;
         width: 25px;
         height: 3px;
         background-color: var(--claro);
@@ -1278,18 +1326,6 @@ nav {
     }
 
     /* EDUCACIÓN */
-
-    .education-element {
-        width: 90%;
-    }
-
-    .education-element-image {
-        width: 30%;
-    }
-
-    .education-element-content {
-        width: 70%;
-    }
 
     .certifications-element {
         width: 45%;
@@ -1393,19 +1429,6 @@ nav {
     }
 
     /* EDUCACIÓN */
-
-    .education-element {
-        flex-direction: column;
-    }
-
-    .education-element-image {
-        width: 75%;
-        margin-bottom: 1.5rem;
-    }
-
-    .education-element-content {
-        width: 100%;
-    }
 
     .certifications-element {
         width: 100%;

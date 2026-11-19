@@ -1,7 +1,12 @@
+import proyectosJSON from "../documents/proyectos.json";
+import aluraJSON from "../documents/alura.json";
+import santanderJSON from "../documents/santander.json";
+
 function Stats() {
+    const totalCertificaciones = aluraJSON.length + santanderJSON.length;
     const stats = [
-        { numero: "8", label: "Proyectos" },
-        { numero: "51", label: "Certificaciones" },
+        { numero: String(proyectosJSON.length), label: "Proyectos" },
+        { numero: String(totalCertificaciones), label: "Certificaciones" },
         { numero: "5", label: "Áreas de especialización" },
         { numero: "20+", label: "Tecnologías" },
     ];

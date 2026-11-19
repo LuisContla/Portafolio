@@ -1,5 +1,7 @@
 import Certifications from "../components/Certifications";
 import EducationImg from "../assets/containers/EducationImg";
+import aluraJSON from "../documents/alura.json";
+import santanderJSON from "../documents/santander.json";
 
 import { chosenTheme } from "../styles/theme";
 
@@ -75,8 +77,8 @@ function Education() {
                 <div className="certifications">
                     <div className="education-title" data-aos="fade-up">Certificaciones</div>
                     <div className="certifications-container">
-                        <Certifications img="/images/ONE.png" curso="Oracle Next Education" institucion="Oracle" link="/alura" badge="51 cursos" />
-                        <Certifications img="/images/Santander.png" curso="Santander Open Academy" institucion="Santander" link="/santander" badge="2 cursos" />
+                        <Certifications img="/images/ONE.png" curso="Oracle Next Education" institucion="Oracle" link="/alura" badge={`${aluraJSON.length} cursos`} />
+                        <Certifications img="/images/Santander.png" curso="Santander Open Academy" institucion="Santander" link="/santander" badge={`${santanderJSON.length} cursos`} />
                         {/* <Certifications img="/images/Google.png" curso="Certificaciones Google" institucion="Google" link="/google" badge="8 cursos" /> */}
                     </div>
                 </div>

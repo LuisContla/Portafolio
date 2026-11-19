@@ -1,7 +1,18 @@
+import { useState } from "react";
 import aluraJSON from "../documents/alura.json";
 import CertificationCard from "../components/CertificationCard";
 
+const CATEGORIAS_ALURA = ["Todos", ...new Set(aluraJSON.map((c) => c.categoria).filter(Boolean))];
+
 function AluraCertifications() {
+    const [categoriaActiva, setCategoriaActiva] = useState("Todos");
+    const [busqueda, setBusqueda] = useState("");
+
+    const cursosFiltrados = aluraJSON.filter((course) => {
+        const coincideCategoria = categoriaActiva === "Todos" || course.categoria === categoriaActiva;
+        const coincideBusqueda = course.curso.toLowerCase().includes(busqueda.trim().toLowerCase());
+        return coincideCategoria && coincideBusqueda;
+    });
 
     return (
         <>
@@ -17,8 +28,36 @@ function AluraCertifications() {
                     </div>
                 </div>
                 <div className="certificationCard">
+                    <div className="filtros-barra">
+                        <input
+                            type="search"
+                            className="buscador-input"
+                            placeholder="Buscar certificación por nombre..."
+                            value={busqueda}
+                            onChange={(e) => setBusqueda(e.target.value)}
+                            aria-label="Buscar certificación por nombre"
+                        />
+                        <div className="filtros-contenedor" role="group" aria-label="Filtrar certificaciones por categoría">
+                            {CATEGORIAS_ALURA.map((categoria) => {
+                                const cantidad =
+                                    categoria === "Todos"
+                                        ? aluraJSON.length
+                                        : aluraJSON.filter((c) => c.categoria === categoria).length;
+                                return (
+                                    <button
+                                        key={categoria}
+                                        type="button"
+                                        className={`filtro-boton ${categoriaActiva === categoria ? "filtro-boton--activo" : ""}`}
+                                        onClick={() => setCategoriaActiva(categoria)}
+                                    >
+                                        {categoria} ({cantidad})
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
                     <div className="certificationCard-container">
-                        {aluraJSON.map(course => (
+                        {cursosFiltrados.map(course => (
                             <CertificationCard key={course.certificado || course.curso} course={course} />
                         ))}
                     </div>

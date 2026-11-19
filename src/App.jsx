@@ -1,5 +1,5 @@
 import "./styles/styles.css";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -16,8 +16,10 @@ import ContactMe from "./pages/ContactMe";
 import AluraCertifications from "./pages/AluraCertifications";
 import SantanderCertifications from "./pages/SantanderCertifications";
 import GoogleCertifications from "./pages/GoogleCertifications";
+import NotFound from "./pages/NotFound";
 
 function App() {
+  const { pathname } = useLocation();
 
   useEffect(() => {
     AOS.init({
@@ -26,6 +28,10 @@ function App() {
       once: true, // Si la animación debe ocurrir solo una vez
     });
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
@@ -39,6 +45,7 @@ function App() {
         <Route path="/alura" element={<AluraCertifications />} />
         <Route path="/santander" element={<SantanderCertifications />} />
         <Route path="/google" element={<GoogleCertifications />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
