@@ -1,21 +1,21 @@
-import "../public/styles/styles.css";
+import "./styles/styles.css";
 import { Routes, Route } from 'react-router-dom';
 
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Nav from "../public/components/Nav";
-import Footer from "../public/components/Footer";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
-import Home from "../public/pages/Home";
-import Education from "../public/pages/Education";
-import Proyects from "../public/pages/Proyects";
-import Resume from "../public/pages/Resume";
-import ContactMe from "../public/pages/ContactMe";
-import AluraCertifications from "../public/pages/AluraCertifications";
-import SantanderCertifications from "../public/pages/SantanderCertifications";
-import GoogleCertifications from "../public/pages/GoogleCertifications";
+import Home from "./pages/Home";
+import Education from "./pages/Education";
+import Proyects from "./pages/Proyects";
+import Resume from "./pages/Resume";
+import ContactMe from "./pages/ContactMe";
+import AluraCertifications from "./pages/AluraCertifications";
+import SantanderCertifications from "./pages/SantanderCertifications";
+import GoogleCertifications from "./pages/GoogleCertifications";
 
 function App() {
 

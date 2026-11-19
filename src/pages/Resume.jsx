@@ -1,5 +1,5 @@
-import PDFFile from "../documents/LuisAndresContlaMotaCV.pdf";
-import PNGFile from "../images/LuisAndresContlaMotaCV.png";
+const PDFFile = "/documents/LuisAndresContlaMotaCV.pdf";
+const PNGFile = "/images/LuisAndresContlaMotaCV.png";
 
 function Resume() {
 

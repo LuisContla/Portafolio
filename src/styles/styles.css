@@ -535,13 +535,13 @@ nav {
     background-color: #dcebe2;
 }
 
-.protectos-elemento-showcase-imagen {
+.proyectos-elemento-showcase-imagen {
     width: 100%;
     display: block;
     transition: 0.3s;
 }
 
-.proyectos-elemento:hover .protectos-elemento-showcase-imagen {
+.proyectos-elemento:hover .proyectos-elemento-showcase-imagen {
     transform: scale(1.05);
 }
 

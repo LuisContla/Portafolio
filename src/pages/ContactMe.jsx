@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import FotoPng from "../images/FotoPerfil.jpg";
+
+const FotoPng = "/images/FotoPerfil.jpg";
 
 function ContactMe() {
     const MIN_SECONDS_TO_SUBMIT = 3;

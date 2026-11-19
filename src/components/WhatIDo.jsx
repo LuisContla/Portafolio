@@ -1,8 +1,8 @@
-import FullStack from "../../src/assets/containers/FullStackImg";
-import DataScience from "../../src/assets/containers/DataScienceImg";
-import ProgrammerImg from "../../src/assets/containers/ProgrammerImg";
-import ProjectsImg from "../../src/assets/containers/ProjectsImg";
-import ExperienceImg from "../../src/assets/containers/ExperienceImg.jsx";
+import FullStack from "../assets/containers/FullStackImg";
+import DataScience from "../assets/containers/DataScienceImg";
+import ProgrammerImg from "../assets/containers/ProgrammerImg";
+import ProjectsImg from "../assets/containers/ProjectsImg";
+import ExperienceImg from "../assets/containers/ExperienceImg.jsx";
 import { chosenTheme } from "../styles/theme";
 
 import Technologie from "../components/Technologie";

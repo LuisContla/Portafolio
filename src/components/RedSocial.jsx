@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-
 const RedSocial = (props) => {
 
     const { red, link } = props;
-    const src = "../images/" + red + ".png";
+    const src = "/images/" + red + ".png";
 
     return (
         <>

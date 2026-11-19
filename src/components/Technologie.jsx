@@ -1,7 +1,7 @@
 const Technologie = (props) => {
 
     const { txt, icono } = props;
-    const src = "../images/" + icono + ".png";
+    const src = "/images/" + icono + ".png";
 
     return (
         <>

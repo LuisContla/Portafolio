@@ -1,31 +1,8 @@
 import ProyectCard from "../components/ProyectCard";
-import ProyectsImg from "../../src/assets/containers/ProjectsImg";
+import ProyectsImg from "../assets/containers/ProjectsImg";
 import proyectosJSON from "../documents/proyectos.json";
 
-import Encriptador from "../images/Encriptador.png";
-import DaysOfCode from "../images/7DaysOfCode.png";
-import AluraGeek from "../images/AluraGeek.png";
-import AluraFlix from "../images/AluraFlix.png";
-import TrashGamez from "../images/Placeholder.png";
-import JuegoDeLaVida from "../images/JuegoDeLaVida.png";
-import Regla30 from "../images/Regla30.png";
-import Regla184 from "../images/Regla184.png";
-import HormigaDeLangton from "../images/HormigaDeLangton.png";
-import Placeholder from "../images/Placeholder.png";
-
 import { chosenTheme } from "../styles/theme";
-
-const imagenes = {
-    "Encriptador.png": Encriptador,
-    "7DaysOfCode.png": DaysOfCode,
-    "AluraGeek.png": AluraGeek,
-    "AluraFlix.png": AluraFlix,
-    "Placeholder.png": TrashGamez,
-    "JuegoDeLaVida.png": JuegoDeLaVida,
-    "Regla30.png": Regla30,
-    "Regla184.png": Regla184,
-    "HormigaDeLangton.png": HormigaDeLangton,
-};
 
 function Proyects() {
 
@@ -51,7 +28,7 @@ function Proyects() {
                                 .map(proyecto => (
                                     <ProyectCard
                                         key={proyecto.id}
-                                        img={imagenes[proyecto.imagen]}
+                                        img={`/images/${proyecto.imagen}`}
                                         titulo={proyecto.titulo}
                                         texto={proyecto.texto}
                                         fecha={proyecto.fecha}

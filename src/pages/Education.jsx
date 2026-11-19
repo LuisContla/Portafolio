@@ -1,19 +1,11 @@
-import ECA from "../images/ECA.png";
-import CECYT9 from "../images/CECyT9.png";
-import ESCOM from "../images/ESCOM.png";
-
 import Certifications from "../components/Certifications";
-import EducationImg from "../../src/assets/containers/EducationImg";
-
-import ONE from "../images/ONE.png";
-import Santander from "../images/Santander.png";
-import Google from "../images/Google.png";
+import EducationImg from "../assets/containers/EducationImg";
 
 import { chosenTheme } from "../styles/theme";
 
 const degrees = [
     {
-        img: ECA,
+        img: "/images/ECA.png",
         nombre: "Centro Educativo ECA",
         grado: "Educación Básica",
         fecha: "2009 — 2018",
@@ -21,7 +13,7 @@ const degrees = [
         summary: "Durante mi formación básica desarrollé hábitos de disciplina, responsabilidad y trabajo constante, además de fortalecer habilidades de aprendizaje y colaboración que marcaron la base de mi crecimiento personal y académico."
     },
     {
-        img: CECYT9,
+        img: "/images/CECyT9.png",
         nombre: "CECyT 9 Juan de Dios Bátiz",
         grado: "Técnico en Programación",
         fecha: "2018 — 2021",
@@ -29,7 +21,7 @@ const degrees = [
         summary: "En esta etapa inicié formalmente mi camino en el desarrollo de software, construyendo bases sólidas en lógica de programación, algoritmos, estructuras de datos y buenas prácticas técnicas como Técnico en Programación."
     },
     {
-        img: ESCOM,
+        img: "/images/ESCOM.png",
         nombre: "Escuela Superior de Cómputo",
         grado: "Ingeniero en Sistemas Computacionales",
         fecha: "2021 — Actualidad",
@@ -83,9 +75,9 @@ function Education() {
                 <div className="certifications">
                     <div className="education-title" data-aos="fade-up">Certificaciones</div>
                     <div className="certifications-container">
-                        <Certifications img={ONE} curso="Oracle Next Education" institucion="Oracle" link="/alura" badge="51 cursos" />
-                        <Certifications img={Santander} curso="Santander Open Academy" institucion="Santander" link="/santander" badge="2 cursos" />
-                        {/* <Certifications img={Google} curso="Certificaciones Google" institucion="Google" link="/google" badge="8 cursos" /> */}
+                        <Certifications img="/images/ONE.png" curso="Oracle Next Education" institucion="Oracle" link="/alura" badge="51 cursos" />
+                        <Certifications img="/images/Santander.png" curso="Santander Open Academy" institucion="Santander" link="/santander" badge="2 cursos" />
+                        {/* <Certifications img="/images/Google.png" curso="Certificaciones Google" institucion="Google" link="/google" badge="8 cursos" /> */}
                     </div>
                 </div>
             </div>

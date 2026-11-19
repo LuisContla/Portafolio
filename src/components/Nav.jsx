@@ -5,7 +5,11 @@ function Nav() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen);
+        setIsOpen((prev) => !prev);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
     };
 
     return (
@@ -21,11 +25,11 @@ function Nav() {
             </div>
 
             <div className={`nav-buttons ${isOpen ? 'open' : ''}`}>
-                <Link className="nav-element" to="/" onClick={toggleMenu}>Inicio</Link>
-                <Link className="nav-element" to="/education" onClick={toggleMenu}>Educación</Link>
-                <Link className="nav-element" to="/projects" onClick={toggleMenu}>Proyectos</Link>
-                <Link className="nav-element" to="/resume" onClick={toggleMenu}>Currículum</Link>
-                <Link className="nav-element" to="/contact" onClick={toggleMenu}>Contáctame</Link>
+                <Link className="nav-element" to="/" onClick={closeMenu}>Inicio</Link>
+                <Link className="nav-element" to="/education" onClick={closeMenu}>Educación</Link>
+                <Link className="nav-element" to="/projects" onClick={closeMenu}>Proyectos</Link>
+                <Link className="nav-element" to="/resume" onClick={closeMenu}>Currículum</Link>
+                <Link className="nav-element" to="/contact" onClick={closeMenu}>Contáctame</Link>
             </div>
         </nav>
     );

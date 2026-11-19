@@ -1,4 +1,4 @@
-import FeelingProud from "../../src/assets/containers/FeelingProud";
+import FeelingProud from "../assets/containers/FeelingProud";
 import RedSocial from "../components/RedSocial";
 import { chosenTheme } from "../styles/theme";
 import { Link } from "react-router-dom";

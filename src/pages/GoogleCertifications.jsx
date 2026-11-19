@@ -1,6 +1,5 @@
 import googleJSON from "../documents/google.json";
 import CertificationCard from "../components/CertificationCard";
-import Google from "../images/Google.png";
 
 function GoogleCertifications() {
 
@@ -14,7 +13,7 @@ function GoogleCertifications() {
                         <div className="nombre-texto">He participado en algunos cursos de Google, emitidos por distintas instituciones, tales como Coursera o Google Skills. A continuación, se detallan las certificaciones de los cursos que completé en el marco de este programa:</div>
                     </div>
                     <div className="nombre-imagen">
-                        <img src={Google} alt="Google" className="certificaciones-portada-imagen" />
+                        <img src="/images/Google.png" alt="Google" className="certificaciones-portada-imagen" />
                     </div>
                 </div>
                 <div className="certificationCard">
@@ -22,13 +21,13 @@ function GoogleCertifications() {
                         Certificado Profesional de IA de Google
                     </div>
                     <div className="certificationCard-container">
-                        {googleJSON.map((course, index) => (
-                            <CertificationCard key={index} course={course} />
+                        {googleJSON.map((course) => (
+                            <CertificationCard key={course.certificado || course.curso} course={course} />
                         ))}
                     </div>
-                    <div className="certificationCard-path">
+                    {/* <div className="certificationCard-path">
                         Beginner: Google Cloud Cybersecurity Certificate
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
